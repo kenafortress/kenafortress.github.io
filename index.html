@@ -1,0 +1,3537 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kena | Every teaching opportunity in one place</title>
+<meta name="description" content="Every teaching opportunity in South Africa in one place: urgent posts, formal posts, marking, bursaries and study abroad. Free, checked and updated every few days.">
+<meta name="theme-color" content="#0E2620">
+<link rel="icon" href="kena-icon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kenafortress.github.io/">
+<meta property="og:title" content="Kena: every teaching opportunity in one place">
+<meta property="og:description" content="Every teaching opportunity in South Africa in one place: urgent posts, formal posts, marking, bursaries and study abroad. Free, checked and updated every few days.">
+<meta property="og:image" content="https://kenafortress.github.io/kena-share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --board:#1B4A3C; --board-deep:#0E2620; --paper:#EEF0EA; --card:#FFFFFF; --chalk:#F6F8F3;
+  --ochre:#C88A2E; --inkblue:#2B4470; --rust:#9C4221; --urgent:#B3311A;
+  --muted:#5E6B63; --line:#D5DBD2; --radius:10px;
+  --display:"Bricolage Grotesque","Trebuchet MS",sans-serif;
+  --body:"Karla","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--board-deep);font-family:var(--body);font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.12;margin:0 0 .4em;letter-spacing:-.015em}
+h1{font-size:clamp(2rem,6.5vw,3.2rem);font-weight:800}
+h2{font-size:clamp(1.45rem,4.2vw,2.1rem)}
+h3{font-size:1.12rem}
+p{margin:0 0 .9em;max-width:68ch}
+a{color:var(--inkblue)}
+code{background:#E4E8E0;padding:1px 5px;border-radius:4px;font-size:.88em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+.masthead{background:var(--board-deep);color:var(--chalk);padding:14px 0}
+.masthead .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{font-family:var(--display);font-weight:800;font-size:1.15rem;letter-spacing:-.02em}
+.logo{display:flex;align-items:center;gap:10px}
+.logo .mark{width:34px;height:34px;flex:0 0 auto}
+.logo .word{letter-spacing:.02em}
+.logo .word b{color:#E7B94A;font-weight:800}
+.logo .tagline{font-family:var(--body);font-weight:500;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#A9BDB4;padding-left:10px;border-left:1px solid rgba(255,255,255,.2)}
+.copybtn{font-family:var(--body);font-size:.82rem;font-weight:700;background:none;border:1.5px solid var(--line);color:var(--board);border-radius:8px;padding:8px 12px;cursor:pointer;margin-left:6px;vertical-align:middle}
+.copybtn:hover{border-color:var(--board)}
+.contact{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:auto}
+.contact .copybtn{margin-left:0}
+.masthead .sub{font-size:.82rem;color:#A9BDB4;margin-left:auto}
+
+.board{background:var(--board);
+  background-image:radial-gradient(ellipse at 22% 18%,rgba(255,255,255,.055),transparent 58%),radial-gradient(ellipse at 78% 82%,rgba(255,255,255,.04),transparent 55%);
+  color:var(--chalk);border-bottom:7px solid #7A5B33;padding:34px 0 28px}
+.board h1{color:#fff;max-width:16ch}
+.board .lede{color:#CFDFD7;max-width:54ch;font-size:1.05rem}
+.q{margin-top:24px}
+.q-title{font-family:var(--display);font-weight:700;font-size:1rem;color:#fff;margin-bottom:9px}
+.q-title em{font-style:normal;color:#A9BDB4;font-weight:500;font-family:var(--body);font-size:.88rem;display:block;margin-top:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--body);font-size:.9rem;color:#DCE9E3;background:rgba(255,255,255,.05);
+  border:1.5px solid rgba(255,255,255,.28);padding:9px 14px;border-radius:999px;cursor:pointer;transition:background .13s,color .13s,border-color .13s}
+.chip:hover{background:rgba(255,255,255,.13)}
+.chip[aria-pressed="true"]{background:var(--ochre);border-color:var(--ochre);color:#20160A;font-weight:700}
+.chip:focus-visible,.tab:focus-visible,button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--ochre);outline-offset:2px}
+
+.note{background:#FFFDF6;border:1px solid #E4D9BE;border-left:5px solid var(--ochre);border-radius:var(--radius);padding:16px 18px;margin:22px 0 0}
+.note h3{margin-bottom:.25em}
+.note p{margin:0;font-size:.96rem;color:#3F4A44}
+.note .steps{margin:10px 0 0;padding-left:1.1em;font-size:.95rem}
+.note .steps li{margin-bottom:5px}
+
+.tabbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
+.tabbar .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabbar .wrap::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;background:none;border:none;border-bottom:3px solid transparent;font-family:var(--body);font-size:.93rem;color:var(--muted);padding:14px 12px;cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{color:var(--board);font-weight:700;border-bottom-color:var(--board)}
+
+.panel{padding:26px 0 60px}
+.panel[hidden]{display:none}
+.intro{color:#3F4A44;font-size:1rem}
+
+/* ---- urgent board ---- */
+.urgent-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+.urgent-head h2{margin:0}
+.pulse{width:10px;height:10px;border-radius:50%;background:var(--urgent);flex:0 0 auto;align-self:center}
+.stamp{font-size:.82rem;color:var(--muted)}
+.ucards{display:grid;gap:12px;margin:16px 0 34px}
+@media(min-width:760px){.ucards{grid-template-columns:1fr 1fr}}
+.ucard{background:#fff;border:1px solid #E5C9C1;border-left:6px solid var(--urgent);border-radius:var(--radius);padding:16px 18px}
+.ucard.days{border-left-color:var(--ochre);border-color:#E7DAC0}
+.ucard h3{margin-bottom:.1em}
+.ucard .org{font-size:.85rem;color:var(--muted);margin-bottom:8px}
+.ucard p{font-size:.94rem;margin-bottom:.6em}
+.ucards>*,.cards>*{min-width:0}
+.ucard,.card{overflow-wrap:anywhere}
+.callbtn{max-width:100%;overflow-wrap:anywhere;display:inline-block;background:var(--urgent);color:#fff;font-weight:700;text-decoration:none;padding:10px 18px;border-radius:8px;font-size:.95rem}
+.ucard.days .callbtn{background:var(--board)}
+.prov-line{font-size:.85rem;color:var(--muted);margin-top:9px}
+.src{font-size:.78rem;color:var(--muted);margin-top:9px;border-top:1px dashed var(--line);padding-top:8px}
+
+.empty{background:var(--chalk);border:2px dashed var(--line);border-radius:var(--radius);padding:22px}
+.empty h3{margin-bottom:.3em}
+.empty p{font-size:.94rem;color:#3F4A44;margin-bottom:.6em}
+.empty p:last-child{margin-bottom:0}
+
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 20px;align-items:center}
+.filters select,.filters input{font-family:var(--body);font-size:.92rem;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--board-deep)}
+.filters input{flex:1;min-width:170px}
+.count{font-size:.85rem;color:var(--muted);margin-left:auto}
+
+.cards{display:grid;gap:14px}
+@media(min-width:760px){.cards{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:17px 18px;display:flex;flex-direction:column}
+.card h3{margin-bottom:.15em}
+.card .org{font-size:.85rem;color:var(--muted);margin-bottom:9px}
+.card p{font-size:.94rem;margin-bottom:.7em}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.02em;padding:3px 8px;border-radius:5px;margin:0 5px 5px 0}
+.t-teach{background:#DDEBE4;color:#17503F}
+.t-db{background:#DCE4F2;color:#233A63}
+.t-money{background:#F6E6C8;color:#6B4A12}
+.t-study{background:#E7DFF2;color:#432D6B}
+.t-work{background:#F4DFD5;color:#7A3417}
+.t-start{background:#E2EEDA;color:#33551F}
+.t-mark{background:#F0DCE6;color:#6B2144}
+.t-time{background:#EDEFEA;color:#4A544D}
+.t-pay{background:#F2D06B;color:#3B2A05}
+.t-type{background:#fff;color:#4A544D;border:1px solid #D5DBD2}
+.card .go{margin-top:auto;align-self:flex-start;font-weight:700;font-size:.92rem;color:var(--inkblue);text-decoration:none;border-bottom:2px solid #BFCDE6;padding-bottom:1px}
+.card .go:hover{border-bottom-color:var(--inkblue)}
+.card .meta{font-size:.82rem;color:var(--muted);margin:0 0 10px}
+
+.route{counter-reset:step;margin:0;padding:0;list-style:none}
+.route li{position:relative;padding:0 0 20px 46px;border-left:2px solid var(--line);margin-left:14px}
+.route li:last-child{border-left-color:transparent;padding-bottom:0}
+.route li::before{counter-increment:step;content:counter(step);position:absolute;left:-16px;top:-2px;width:30px;height:30px;border-radius:50%;background:var(--board);color:#fff;font-family:var(--display);font-weight:700;display:grid;place-items:center;font-size:.9rem}
+.route h3{margin-bottom:.2em}
+.route p{font-size:.95rem;margin-bottom:.45em}
+
+details{background:#fff;border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px}
+summary{cursor:pointer;padding:14px 16px;font-family:var(--display);font-weight:700;font-size:1rem;list-style:none;display:flex;align-items:center;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";color:var(--ochre);font-size:1.3rem;line-height:1;width:14px}
+details[open] summary::before{content:"–"}
+.details-body{padding:0 16px 16px;font-size:.95rem}
+.details-body ol,.details-body ul{padding-left:1.2em;margin:0 0 .8em}
+.details-body li{margin-bottom:7px}
+.warn{background:#FBF1EC;border-left:4px solid var(--rust);padding:10px 13px;border-radius:6px;font-size:.9rem;margin-top:10px}
+
+.prov{display:grid;gap:12px}
+@media(min-width:700px){.prov{grid-template-columns:1fr 1fr}}
+.prov a{display:block;background:#fff;border:1px solid var(--line);border-left:5px solid var(--board);border-radius:8px;padding:14px 16px;text-decoration:none;color:inherit}
+.prov a:hover{border-left-color:var(--ochre)}
+.prov strong{font-family:var(--display);font-size:1.02rem;display:block}
+.prov span{font-size:.87rem;color:var(--muted)}
+
+.form-grid{display:grid;gap:10px;max-width:660px}
+@media(min-width:640px){.form-grid{grid-template-columns:1fr 1fr}}
+.form-grid label{display:flex;flex-direction:column;font-size:.85rem;color:var(--muted);gap:4px}
+.form-grid label.full{grid-column:1/-1}
+.form-grid input,.form-grid select,.form-grid textarea{font-family:var(--body);font-size:.94rem;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--board-deep)}
+.btn{font-family:var(--body);font-weight:700;font-size:.95rem;background:var(--board);color:#fff;border:none;border-radius:8px;padding:11px 20px;cursor:pointer;margin:0 6px 6px 0}
+.btn:hover{background:#153C31}
+.btn.ghost{background:none;color:var(--board);border:1.5px solid var(--board)}
+textarea#out{width:100%;min-height:170px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.82rem;margin-top:14px}
+.subhead{font-family:var(--display);font-weight:700;font-size:1.15rem;margin:34px 0 8px}
+
+/* got the job + share */
+.win-grid{display:grid;gap:28px;grid-template-columns:1fr}
+@media (min-width:900px){.win-grid{grid-template-columns:1.15fr .85fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;min-width:0}
+.box h3{font-size:1.25rem}
+.tick{display:flex!important;flex-direction:row!important;align-items:flex-start;gap:10px;color:var(--board-deep)!important;font-size:.92rem!important;line-height:1.45}
+.tick input{margin-top:3px;width:18px;height:18px;flex:none;accent-color:var(--board)}
+.form-grid .req::after{content:" *";color:var(--rust)}
+.msg{width:100%;min-height:190px;font-family:var(--body);font-size:.9rem;padding:11px;border:1px solid var(--line);border-radius:8px;background:var(--chalk);color:var(--board-deep);margin-top:12px}
+.sendto{background:var(--chalk);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-top:12px;font-size:.92rem;overflow-wrap:anywhere}
+.sendto strong{font-family:var(--display)}
+.code{display:inline-block;font-family:var(--display);font-weight:800;font-size:1.5rem;letter-spacing:.06em;color:#341654;background:#F6E9C2;border:2px solid #D9A522;border-radius:8px;padding:6px 14px;margin:6px 0 4px}
+.btnrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+a.btn{display:inline-block;text-decoration:none}
+.formerr{color:var(--urgent);font-weight:700;font-size:.9rem;margin-top:10px}
+.stories{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.stories>*{min-width:0}
+.story{background:var(--card);border:1px solid var(--line);border-left:4px solid #D9A522;border-radius:var(--radius);padding:16px 18px}
+.story .org{font-size:.85rem;color:var(--muted);margin-bottom:8px}
+.story blockquote{margin:0 0 8px;font-size:.95rem}
+.ok{background:#E2EEDA;color:#33551F}
+
+footer{background:var(--board-deep);color:#A9BDB4;padding:30px 0;font-size:.88rem}
+footer a{color:#D5E4DC}
+footer strong{color:#fff;font-family:var(--display)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="logo"><svg class="mark" viewBox="0 0 256 256" aria-hidden="true"><defs><linearGradient id="kg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F2D06B"/><stop offset="45%" stop-color="#D9A522"/><stop offset="100%" stop-color="#B07C12"/></linearGradient><linearGradient id="kp" x1="0" y1="0" x2=".6" y2="1"><stop offset="0%" stop-color="#5B2C8D"/><stop offset="100%" stop-color="#341654"/></linearGradient></defs><g transform="translate(128,128)"><g fill="url(#kg)"><rect x="-96" y="-96" width="192" height="192" rx="14"/><rect x="-96" y="-96" width="192" height="192" rx="14" transform="rotate(45)"/></g><g fill="url(#kp)"><rect x="-74" y="-74" width="148" height="148" rx="11"/><rect x="-74" y="-74" width="148" height="148" rx="11" transform="rotate(45)"/></g><path d="M -34 64 L -34 -10 A 34 34 0 0 1 34 -10 L 34 64 Z" fill="url(#kg)"/><path d="M -15 64 L -15 -5 A 15 15 0 0 1 15 -5 L 15 64 Z" fill="url(#kp)"/></g></svg><span class="word">KE<b>NA</b></span><span class="tagline">Come in</span></div>
+    <div class="sub" id="stampTop">South Africa</div>
+  </div>
+</header>
+
+<section class="board">
+  <div class="wrap">
+    <h1>Every teaching opportunity in one place.</h1>
+    <p class="lede">Jobs today, jobs in three months, bursaries, marking, tutoring, department posts and study abroad, for anyone in South Africa who teaches, or wants to.</p>
+
+    <div class="q">
+      <div class="q-title">Where are you right now?<em>Pick the one closest to you.</em></div>
+      <div class="chips" id="stageChips" role="group" aria-label="Your stage"></div>
+    </div>
+
+    <div class="q">
+      <div class="q-title">What do you want your teaching life to look like?<em>This changes what we show first. Change it any time.</em></div>
+      <div class="chips" id="pathChips" role="group" aria-label="Your path"></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="note" id="note"></div></div>
+
+<nav class="tabbar" aria-label="Sections"><div class="wrap" id="tabbar" role="tablist"></div></nav>
+
+<main class="wrap">
+
+<!-- OPPORTUNITIES -->
+<section class="panel" id="panel-jobs" role="tabpanel">
+
+  <div class="urgent-head">
+    <span class="pulse"></span>
+    <h2>Needed now</h2>
+    <span class="stamp" id="urgentStamp"></span>
+  </div>
+  <p class="intro">Schools that need someone this week. A teacher resigns, falls ill or goes on leave, and the post is filled in a day by phone. These never reach a government website. Phone the number, do not email.</p>
+  <div class="ucards" id="urgentCards"></div>
+
+  <h2>Everything else</h2>
+  <p class="intro">Formal posts, databases, bursaries, marking and study. The formal route takes two to three months from advert to appointment, so apply early and apply to several.</p>
+
+  <div class="filters">
+    <select id="fKind" aria-label="Type of opportunity"></select>
+    <select id="fProv" aria-label="Province"></select>
+    <select id="fSpeed" aria-label="How fast it moves"></select>
+    <input id="fText" type="search" placeholder="Search, e.g. maths, marking, bursary">
+    <span class="count" id="count"></span>
+  </div>
+  <div class="cards" id="cards"></div>
+  <div class="sendto" style="margin-top:22px;max-width:660px"><strong>Got a job through Kena?</strong> Tell us, and share Kena with your code to earn free months. <button class="copybtn" type="button" id="goWin" style="margin-left:4px">Go to Got the job?</button></div>
+</section>
+
+<!-- PROVINCES -->
+<section class="panel" id="panel-prov" role="tabpanel" hidden>
+  <h2>Provincial databases</h2>
+  <p class="intro">Every province keeps its own list of vacant posts and its own database of available educators. Getting onto your province's database is the single most useful thing an unemployed teacher can do. It is free.</p>
+  <p class="intro"><strong>Do it for more than one province</strong> if you would move. Nothing stops you registering in all nine.</p>
+  <div class="prov" id="provList"></div>
+  <div class="warn" style="margin-top:20px">Government websites move their pages often. If a link is dead, go to the department's home page and look for “Vacancies”, “Careers” or “Recruitment”. Never pay anyone to put you on a database. It is always free.</div>
+</section>
+
+<!-- BECOME -->
+<section class="panel" id="panel-become" role="tabpanel" hidden>
+  <h2>How to become a teacher</h2>
+  <p class="intro">The full road, in order, from matric to your first classroom. Four years through a BEd, or one extra year if you already have a degree.</p>
+  <ol class="route" id="routeList"></ol>
+</section>
+
+<!-- MARKING -->
+<section class="panel" id="panel-mark" role="tabpanel" hidden>
+  <h2>Marking, moderation and quality assurance</h2>
+  <p class="intro">Assessment work is the quietest, best-paid extra income in this profession, and almost nobody explains how to get into it. It is also the ladder into examining, curriculum work and Umalusi.</p>
+  <ol class="route" id="markRoute"></ol>
+  <h3 class="subhead">Where to apply</h3>
+  <div class="cards" id="markCards"></div>
+</section>
+
+<!-- MONEY -->
+<section class="panel" id="panel-money" role="tabpanel" hidden>
+  <h2>Money for studying</h2>
+  <p class="intro">Bursaries (money you do not pay back, but usually with conditions attached), stipends and loans, at every level.</p>
+  <div class="cards" id="moneyCards"></div>
+</section>
+
+<!-- STUDY -->
+<section class="panel" id="panel-study" role="tabpanel" hidden>
+  <h2>Study further</h2>
+  <p class="intro">Honours, master's, PhD and postdoctoral study, inside South Africa, elsewhere in Africa, and overseas. A teaching qualification opens more postgraduate doors than most people realise.</p>
+  <ol class="route" id="studyRoute"></ol>
+  <h3 class="subhead">Funders and scholarships</h3>
+  <div class="cards" id="studyCards"></div>
+</section>
+
+<!-- ABROAD -->
+<section class="panel" id="panel-abroad" role="tabpanel" hidden>
+  <h2>Teaching outside South Africa</h2>
+  <p class="intro">South African teachers are wanted in many countries, mostly because we teach in English and our qualifications are recognised. Get your documents right first. That is what stops most people.</p>
+  <ol class="route" id="abroadRoute"></ol>
+  <div class="warn">Be careful of agents who ask for money upfront. A real school or recruiter is paid by the employer, not by you. If someone asks for a “placement fee” before you have a signed contract, walk away.</div>
+</section>
+
+<!-- GUIDES -->
+<section class="panel" id="panel-guides" role="tabpanel" hidden>
+  <h2>How to apply, step by step</h2>
+  <p class="intro">Open the one you need. Each is written in order, from the first thing you do to the last.</p>
+  <div id="guides"></div>
+</section>
+
+<!-- GOT THE JOB -->
+<section class="panel" id="panel-win" role="tabpanel" hidden>
+  <h2>Got the job? Tell us.</h2>
+  <p class="intro">If Kena helped you get a post, marking work, a bursary or a place to study, tell us what happened. Real stories show other teachers that this works. We check every story before it goes up, the same way we check every post.</p>
+
+  <div class="win-grid">
+    <div class="box">
+      <h3>Share your story</h3>
+      <p style="font-size:.92rem;color:var(--muted)">Fields with a star are needed. Your phone number or email is only for us to confirm. We never publish it.</p>
+      <div class="form-grid">
+        <label><span class="req">Your first name</span><input id="wName" maxlength="40" autocomplete="given-name"></label>
+        <label><span class="req">What did you get?</span><select id="wGot">
+          <option value="">Choose one</option>
+          <option>A teaching post</option>
+          <option>Marking or assessment work</option>
+          <option>A bursary or funding</option>
+          <option>A place to study</option>
+          <option>Tutoring or assistant work</option>
+          <option>Something else</option>
+        </select></label>
+        <label class="full">Which Kena post was it?<input id="wPost" list="wPosts" placeholder="Start typing the school or the post"></label>
+        <datalist id="wPosts"></datalist>
+        <label><span class="req">School or organisation</span><input id="wOrg" maxlength="90"></label>
+        <label>Province<select id="wProv"></select></label>
+        <label>When did you get it?<input id="wDate" type="date"></label>
+        <label>Kena code of the person who told you about Kena<input id="wRef" maxlength="20" placeholder="e.g. THABO-4821" style="text-transform:uppercase"></label>
+        <label class="full"><span class="req">Your story, in a few lines</span><textarea id="wStory" rows="4" maxlength="600" placeholder="How you found the post, how quickly you applied, what happened next."></textarea></label>
+        <label class="full"><span class="req">Phone or email so we can confirm</span><input id="wContact" maxlength="80"></label>
+        <label class="full tick"><input type="checkbox" id="wTrue"><span><strong>This is true.</strong> I can show my appointment letter or offer if Kena asks.</span></label>
+        <label class="full tick"><input type="checkbox" id="wPub"><span>Kena may publish my first name, the post and my story. (You can say no and still help us count what works.)</span></label>
+      </div>
+      <div class="btnrow"><button class="btn" id="wMake" type="button">Get my story ready</button></div>
+      <div id="wErr" class="formerr" role="alert"></div>
+      <div id="wReady" hidden>
+        <textarea class="msg" id="wOut" readonly></textarea>
+        <div class="btnrow"><button class="btn" id="wCopy" type="button">Copy my story</button></div>
+        <div class="sendto" id="wSend"></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3>Share Kena, earn free months</h3>
+      <ol class="route" style="margin-top:14px">
+        <li><h3>Get your Kena code</h3><p>Type your first name below. Your code stays on this phone, so you only do it once.</p></li>
+        <li><h3>Send Kena to people who need work</h3><p>Your code goes with the message, so they know who sent them.</p></li>
+        <li><h3>They get the job</h3><p>When they share their story, they add your code.</p></li>
+        <li><h3>You earn free months</h3><p>Once we confirm the job, you get free months of Kena's paid features when they launch. Kena's board stays free for everyone.</p></li>
+      </ol>
+      <div class="form-grid" style="margin-top:16px">
+        <label class="full">Your first name<input id="rName" maxlength="20" autocomplete="given-name"></label>
+      </div>
+      <div class="btnrow"><button class="btn" id="rMake" type="button">Make my code</button></div>
+      <div id="rReady" hidden>
+        <div style="margin-top:14px;font-size:.9rem;color:var(--muted)">Your Kena code</div>
+        <div class="code" id="rCode"></div>
+        <textarea class="msg" id="rOut" readonly style="min-height:130px"></textarea>
+        <div class="btnrow">
+          <a class="btn" id="rWa" target="_blank" rel="noopener">Share on WhatsApp</a>
+          <button class="btn ghost" id="rCopy" type="button">Copy message</button>
+          <button class="btn ghost" id="rShare" type="button" hidden>Share another way</button>
+        </div>
+      </div>
+      <div class="warn" style="margin-top:16px">Rewards only count for jobs we can confirm with an appointment letter or the school. A made-up story cancels every reward on that code.</div>
+    </div>
+  </div>
+
+  <h2 style="margin-top:40px">People who got there</h2>
+  <p class="intro">Every story here was checked by Kena and is shared with the person's permission.</p>
+  <div class="stories" id="storyList"></div>
+</section>
+
+<!-- INTAKE -->
+<section class="panel" id="panel-add" role="tabpanel" hidden>
+  <h2>Add posts</h2>
+  <p class="intro">Only you see this tab. Use it to turn a channel post into a Kena entry. Two rules: we only publish what has a real contact on it, and we mark every post with where it came from and the day we saw it.</p>
+
+  <h3 class="subhead">Urgent post: the fast lane</h3>
+  <p class="intro">For “we need a maths teacher today, call this number”. Paste the WhatsApp message straight in and we will pull the pieces out.</p>
+  <div class="form-grid">
+    <label class="full">Paste the message<textarea id="pTxt" rows="4" placeholder="URGENT: Mathematics educator needed at ... Grade 8-9. Start Monday. Contact Mrs ... 08X XXX XXXX"></textarea></label>
+  </div>
+  <p><button class="btn" id="parse">Pull out the details</button></p>
+
+  <h3 class="subhead">Check it and fill the gaps</h3>
+  <div class="form-grid">
+    <label class="full">Title<input id="aTitle" placeholder="Mathematics educator needed, Grade 8 to 9"></label>
+    <label class="full">School or organisation<input id="aOrg" placeholder="Name of the school, or 'School in Soshanguve'"></label>
+    <label>Type<select id="aKind"></select></label>
+    <label>Province<select id="aProv"></select></label>
+    <label>How fast it moves<select id="aSpeed"></select></label>
+    <label>Phone number to call<input id="aPhone" placeholder="08X XXX XXXX"></label>
+    <label>Email to send the CV to<input id="aEmail" placeholder="hr@school.co.za"></label>
+    <label class="full">What it is, in plain words<textarea id="aWhat" rows="3"></textarea></label>
+    <label class="full">Who can apply<input id="aWho" placeholder="SACE-registered maths educator, Senior Phase"></label>
+    <label>Closing or start date<input id="aWhen" placeholder="Start Monday 8 September"></label>
+    <label>Official link, if any<input id="aUrl" placeholder="https://"></label>
+    <label>Day you saw it<input id="aSeen" type="date"></label>
+    <label>Take it down after<input id="aExp" type="date"></label>
+    <label class="full">Where it came from<input id="aSrc" placeholder="e.g. Gauteng Teaching Vacancies WhatsApp channel"></label>
+    <label class="full">Stages it suits<select id="aStages" multiple size="5"></select></label>
+    <label class="full">Paths it suits<select id="aPaths" multiple size="4"></select></label>
+  </div>
+  <p style="margin-top:14px">
+    <button class="btn" id="mk">Make the entry</button>
+    <button class="btn ghost" id="cp">Copy</button>
+    <button class="btn ghost" id="clr">Clear the form</button>
+  </p>
+  <textarea id="out" readonly placeholder="Your entry will appear here. Copy it and send it to Claude with the next batch."></textarea>
+
+  <h3 class="subhead">The three-day drop</h3>
+  <p class="intro">Every three days, send Claude the batch of screenshots, PDFs and text in one go. Claude checks each post against its image and publishes the update to this same link. Anything that has passed its take-down date disappears from the board on its own, so the front page never carries a dead post.</p>
+  <div class="warn">Never publish a post you cannot trace to a person. If a message has no school name and no number, it stays off the board. One fake post costs more trust than fifty real ones earn.</div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Kena</strong> means come in. Built for South African educators. Free to use, free to share.</p>
+    <p>We list official sources and posts we have traced to a real contact. We take no money from employers, agents or recruiters. Every post shows the day we saw it and where it came from. Always check a post with the school before you travel or send documents.</p>
+    <p id="footReport" hidden></p>
+    <p>Next: isiZulu, Sesotho and Afrikaans, then the rest of the continent.</p>
+  </div>
+</footer>
+
+<script>
+/* ==========================================================================
+   1. THE LISTS YOU EDIT. Paste new entries into DATA.
+   ========================================================================== */
+
+const STAGES = [
+  {id:"school",   label:"Still at school or deciding"},
+  {id:"studying", label:"Studying now"},
+  {id:"new",      label:"Just qualified"},
+  {id:"teaching", label:"Teaching already"},
+  {id:"beyond",   label:"Looking past the classroom"}
+];
+
+const PATHS = [
+  {id:"rooted", label:"One school, long term",
+   line:"You want a home. A school where you know every learner's name and you grow inside it.",
+   steps:["Get onto your province's database and stay on it. Permanent posts are filled from there.",
+          "Take a temporary or substitute post at a school you actually like. Most permanent posts go to someone already in the building.",
+          "Ask your principal what the school needs in three years, then go and get that qualification."]},
+  {id:"growing", label:"Keep studying and climbing",
+   line:"You want the qualification after your name and the post that comes with it.",
+   steps:["Finish your current qualification well. Postgraduate funding is decided on marks.",
+          "Apply for Honours funding a year before you need it. Most deadlines close eight to twelve months early.",
+          "Get onto a marking panel. Marking leads to senior marker, then examiner, then moderator. That is the assessment ladder into department work."]},
+  {id:"moving", label:"Move around, try things",
+   line:"You do not want to sit in one staffroom for thirty years. Good, because this profession lets you move.",
+   steps:["Watch the Needed now board and keep your documents in one folder on your phone. These posts are gone in a day.",
+          "Register on several provincial databases at once, not just your own.",
+          "Get your documents ready for abroad early: SACE certificate, police clearance, certified copies. Doors open at short notice."]},
+  {id:"open", label:"Show me everything",
+   line:"You are keeping your options open. Fair enough. Here is the whole board.",
+   steps:["Start with your province's database. It costs nothing and opens the most doors.",
+          "Read the How to apply guides once, properly. Most applications are rejected on paperwork, not on merit.",
+          "Pick one thing to apply for this week. One real application beats ten saved links."]}
+];
+
+const KINDS = [
+  {id:"teach", label:"Teaching posts",        cls:"t-teach"},
+  {id:"db",    label:"Databases to join",     cls:"t-db"},
+  {id:"start", label:"Tutoring, assisting, internships", cls:"t-start"},
+  {id:"mark",  label:"Marking & assessment",  cls:"t-mark"},
+  {id:"dept",  label:"Department & office posts", cls:"t-db"},
+  {id:"money", label:"Bursaries & funding",   cls:"t-money"},
+  {id:"study", label:"Postgraduate study",    cls:"t-study"},
+  {id:"work",  label:"Outside South Africa",  cls:"t-work"},
+  {id:"coach", label:"Sport and culture coaching", cls:"t-start"}
+];
+
+const SPEEDS = [
+  {id:"now",    label:"Needed now, phone today"},
+  {id:"days",   label:"Closes within days"},
+  {id:"formal", label:"Formal process, 2 to 3 months"},
+  {id:"always", label:"Open all year"},
+  {id:"season", label:"Opens in a season each year"}
+];
+
+const PROVINCES = [
+  {id:"nat",label:"National / all provinces"},{id:"ec",label:"Eastern Cape"},{id:"fs",label:"Free State"},
+  {id:"gp",label:"Gauteng"},{id:"kzn",label:"KwaZulu-Natal"},{id:"lp",label:"Limpopo"},
+  {id:"mp",label:"Mpumalanga"},{id:"nc",label:"Northern Cape"},{id:"nw",label:"North West"},
+  {id:"wc",label:"Western Cape"},{id:"unk",label:"Province not stated"},{id:"int",label:"International"}
+];
+
+const PROVINCE_LINKS = [
+  {name:"Eastern Cape Department of Education", note:"Vacancies and circulars", url:"https://www.ecdoe.gov.za"},
+  {name:"Free State Department of Education", note:"Vacancy bulletins (PDF)", url:"https://www.education.fs.gov.za/?page_id=1283"},
+  {name:"Gauteng Department of Education", note:"Vacancies page", url:"https://education.gauteng.gov.za/pages/vacancies.aspx"},
+  {name:"Gauteng: Unemployed Educators database", note:"Register here if you want a post in Gauteng", url:"https://unemployededucators.gauteng.gov.za/Vacancy/Vacancy.aspx"},
+  {name:"KwaZulu-Natal Department of Education", note:"Recruitment and vacancies", url:"https://www.kzneducation.gov.za/index.php/recruitment/vacancies"},
+  {name:"Limpopo Department of Education", note:"Career opportunities", url:"https://www.edu.limpopo.gov.za"},
+  {name:"Mpumalanga Department of Education", note:"Vacancies", url:"https://mpeducation.mpg.gov.za/vacancies.htm"},
+  {name:"Northern Cape Department of Education", note:"Vacancies and circulars", url:"https://www.ncdoe.gov.za"},
+  {name:"North West Department of Education", note:"Careers, plus the Z83 and EDNW forms", url:"https://education.nwpg.gov.za/?page_id=13"},
+  {name:"Western Cape Education Department", note:"Vacancies and bulletins", url:"https://www.westerncape.gov.za/education/vacancies"},
+  {name:"Western Cape e-Recruitment", note:"All WCED applications go through here. Email and hand delivery are not accepted", url:"https://e-recruitment.westerncape.gov.za/"},
+  {name:"Department of Basic Education", note:"National vacancies and links to all nine provincial departments", url:"https://www.education.gov.za/Vacancies.aspx"}
+];
+
+/* ---------- THE BOARD ----------
+   Fields: title, org, kind, prov, speed, stages[], paths[], what, who, when,
+           url, phone, source, seen (YYYY-MM-DD), expires (YYYY-MM-DD)
+   Anything with speed "now" or "days" shows on the Needed now board and
+   disappears by itself once its expires date has passed.
+--------------------------------- */
+const DATA = [
+
+  /* ---- Posts from the channels. Newest at the top.
+         Anything past its expires date drops off the board by itself. ---- */
+  {
+    title:"Intersen Phase Grade 7 educator, WCED contract",
+    org:"Sacred Heart R.K. Primer, Oudtshoorn",
+    kind:"teach",
+    prov:"wc",
+    speed:"now",
+    stages:["new","teaching"],
+    paths:["rooted","moving","open"],
+    what:"A Catholic school in Oudtshoorn. Contract runs 6 October 2026 to 6 February 2027. Afrikaans, CAPS trained, must be good at teaching reading and number skills, and must support the school's religious ethos. Applications and full CVs are delivered BY HAND to the school office, not emailed.",
+    who:"Intersen Phase Grade 7, Afrikaans, CAPS trained, SACE registered, certified copies of qualifications, involvement in culture and sport, computer literate.",
+    when:"Closes Monday 21 September 2026 at 12:00",
+    email:"sacredheartrcprim@gmail.com",
+    phone:"044 272 3708",
+    url:"",
+    caution:"No incomplete CVs and no late applications will be considered. Hand delivery only.",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-09-21"
+  },
+  {
+    title:"Geography, History and Tourism Grade 10, WCED contract",
+    org:"Hoerskool Valhalla, Elsies River",
+    kind:"teach",
+    prov:"wc",
+    speed:"now",
+    stages:["new","teaching"],
+    paths:["rooted","moving","open"],
+    what:"Short contract from 1 October to 31 December 2026. You must be fluent in both Afrikaans and English. Send a short application letter, certified ID, CV with two contactable references, certified qualifications, SACE registration and proof of vetting.",
+    who:"Appropriate professional qualifications, SACE registered, sound CAPS knowledge, willing to lead extra classes.",
+    when:"Closes Monday 21 September 2026 at 14:00",
+    email:"info.valhallahigh@gmail.com",
+    phone:"021 932 0116",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-09-21"
+  },
+  {
+    title:"Post Level 1 educator, temporary appointment on a promotional post",
+    org:"Highveld Ridge East Circuit, Hoerskool Evander",
+    kind:"dept",
+    prov:"mp",
+    speed:"now",
+    stages:["new","teaching"],
+    paths:["rooted","growing","open"],
+    what:"A circuit office advert from the Gert Sibande district, not a school advert. These go out on a circuit vacancy list and close fast.",
+    who:"Suitably qualified teachers. Enquiries to Ms Ngwenya, Mr Mahlangu or Mr Kavu at the circuit office.",
+    when:"Closes Monday 21 September 2026 at 13:00",
+    email:"",
+    phone:"013 880 2029",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-09-21"
+  },
+  {
+    title:"Front of House and Receptionist",
+    org:"Wynberg Girls' High School",
+    kind:"dept",
+    prov:"wc",
+    speed:"now",
+    stages:["beyond","new"],
+    paths:["rooted","moving","open"],
+    what:"School administration team post starting January 2027. A non-teaching route into a school, useful if you have an education background but want an office role.",
+    who:"Warm, professional and highly organised. Full details are in the advert on the school website.",
+    when:"Closes Monday 21 September 2026",
+    email:"",
+    phone:"",
+    url:"https://wynghs.co.za/wghs-vacancy_front-of-house_receptionist/",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-09-21"
+  },
+  {
+    title:"Stringed Instrument Specialist and Educator, Grades 8 to 12",
+    org:"Grey High School, Gqeberha",
+    kind:"teach",
+    prov:"ec",
+    speed:"days",
+    stages:["new","teaching"],
+    paths:["rooted","growing","open"],
+    what:"Full-time SGB post starting Term 1 of 2027. You run the school's strings programme, teach individual and ensemble lessons up to Matric, conduct performances, prepare learners for external performance exams and manage tours and festivals. Apply through the online form on the school site and email your CV.",
+    who:"Advanced competency in upper strings and working knowledge of lower strings to at least Grade 6 level. Appropriate academic qualifications and SACE registration. Piano accompaniment is an advantage.",
+    when:"Closes 23 September 2026",
+    email:"vacancies@greyhighschool.com",
+    phone:"",
+    url:"https://www.greyhighschool.com",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-09-23"
+  },
+  {
+    title:"Governing body post: Grade 2 English teacher",
+    org:"Grey College Primary, Bloemfontein",
+    kind:"teach",
+    prov:"fs",
+    speed:"days",
+    stages:["new","teaching"],
+    paths:["rooted","open"],
+    what:"Parallel medium school for boys. Starts 1 January 2027. Basic salary and benefits are negotiable, which is normal for an SGB post and means you should ask.",
+    who:"Foundation Phase teaching qualification, SACE registration, police clearance, proficient in English and Afrikaans. Sport or cultural involvement is essential.",
+    when:"Closes 23 September 2026",
+    email:"Lbrits@gcpb.co.za",
+    phone:"",
+    url:"",
+    caution:"No feedback after two weeks means you were not successful.",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-09-23"
+  },
+  {
+    title:"Foundation Phase teacher, Grade 0 to Grade 3",
+    org:"Hatfield Christian School, Pretoria",
+    kind:"teach",
+    prov:"gp",
+    speed:"days",
+    stages:["new","teaching"],
+    paths:["rooted","growing","open"],
+    what:"English medium independent school in the east of Pretoria, Grade 000 to 12, starting January 2027. Two steps: complete the online Google form first, then email your CV with 'Foundation Phase Teacher 2027' in the subject line. Doing only one of the two will not count.",
+    who:"Committed Christian active in their faith, confident teaching Literacy, Numeracy and English, Afrikaans or isiZulu First Additional. Good admin, ICT and leadership skills. Full paid up SACE registration.",
+    when:"Closes 23 September 2026",
+    email:"cv@hatfieldcs.co.za",
+    phone:"",
+    url:"https://forms.gle/n8JyLzC69DUAuzpe6",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-09-23"
+  },
+  {
+    title:"Three permanent posts: Foundation Phase, English and Social Sciences, EMS and Mathematics",
+    org:"Pinetown Senior Primary School, Durban",
+    kind:"teach",
+    prov:"kzn",
+    speed:"days",
+    stages:["new","teaching"],
+    paths:["rooted","growing","moving","open"],
+    what:"Three separate permanent posts at one school. Say clearly in your email which post you are applying for. Enquiries go to the principal, Mrs NP Ntshika.",
+    who:"Qualified, SACE registered educators for the relevant phase and subjects.",
+    when:"Closes 25 September 2026",
+    email:"pinetownsenior2026@gmail.com",
+    phone:"031 702 5277",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-09-25"
+  },
+  {
+    title:"Governing body posts across many subjects, Grades 8 to 12",
+    org:"Hoerskool Ladybrand",
+    kind:"teach",
+    prov:"fs",
+    speed:"days",
+    stages:["new","teaching"],
+    paths:["rooted","growing","moving","open"],
+    what:"A long list of SGB posts at one school: Agricultural Studies, Social Sciences, Technology, Life Orientation, Afrikaans FAL, English Home Language, English FAL, EGD, Life Sciences and Agricultural Technology. Say which subjects you can offer, including any beyond the ones listed.",
+    who:"Must teach in both English and Afrikaans. Appropriate qualification, academic results, ID, police clearance, SACE registration, valid driver's licence, extra-curricular involvement.",
+    when:"Closes 25 September 2026",
+    email:"442607292@fsschoolsportal.gov.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-09-25"
+  },
+  {
+    title:"Afrikaans Home Language Grades 8 to 12, governing body post",
+    org:"Afrikaanse Hoer Seunskool (Affies), Pretoria",
+    kind:"teach",
+    prov:"gp",
+    speed:"days",
+    stages:["teaching"],
+    paths:["rooted","growing","open"],
+    what:"Post Level 1 SGB post starting 1 January 2027. At least five years of experience is required, so this is not an entry-level post. Put the post you are applying for in the subject line. After-hours involvement is expected as agreed.",
+    who:"Appropriate qualifications and at least five years of experience. SACE certificate required.",
+    when:"Closes Monday 28 September 2026",
+    email:"cv@affies.co.za",
+    phone:"",
+    url:"",
+    caution:"If you have not been contacted by 9 October, your application was unsuccessful.",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-09-28"
+  },
+  {
+    title:"Mathematics and English First Additional Language, Grades 8 to 12",
+    org:"Goudveld-Hoerskool, Welkom",
+    kind:"teach",
+    prov:"fs",
+    speed:"days",
+    stages:["new","teaching"],
+    paths:["rooted","growing","open"],
+    what:"Two posts for 2027 at an Afrikaans school in Welkom. Only applications with complete documentation will be considered.",
+    who:"Appropriate qualification for Mathematics or English FAL, Grades 8 to 12.",
+    when:"Closes 30 September 2026",
+    email:"mark.louwies@gouties.net",
+    phone:"072 674 0534",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-09-30"
+  },
+  {
+    title:"Head of the Pre-Primary School, governing body post",
+    org:"President Brand Primere Skool, Bloemfontein",
+    kind:"teach",
+    prov:"fs",
+    speed:"days",
+    stages:["teaching","beyond"],
+    paths:["rooted","growing","open"],
+    what:"A leadership post rather than a classroom post. Starts 1 January 2027 or as soon as possible after that. Send a summary CV, certified copies of all qualifications, testimonials, certified ID and driver's licence, and a police clearance certificate.",
+    who:"ECD National Diploma or BEd Foundation Phase, plus experience as a teacher in a pre-primary school.",
+    when:"Closes 2 October 2026",
+    email:"info@presidentbrand.co.za",
+    phone:"051 422 4941",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-10-02"
+  },
+  {
+    title:"Foundation Phase maternity substitute",
+    org:"Soneike Schools, Kuilsriver, Cape Town",
+    kind:"teach",
+    prov:"wc",
+    speed:"days",
+    stages:["new","studying","teaching"],
+    paths:["moving","open"],
+    what:"Maternity relief from 7 October 2026 to 8 February 2027. Short contracts like this are the fastest way for a new teacher to get paid classroom time and a reference.",
+    who:"Foundation Phase educator available for the full period.",
+    when:"Starts 7 October 2026, runs to 8 February 2027",
+    email:"heather@soneikeschools.org",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-10-07"
+  },
+  {
+    title:"English First Additional Language, Grades 4 to 7, governing body post",
+    org:"Hoerskool Staatspresident Swart, Brandfort",
+    kind:"teach",
+    prov:"fs",
+    speed:"days",
+    stages:["new","teaching"],
+    paths:["rooted","open"],
+    what:"Afrikaans medium combined school, Grade R to 12, with 470 learners in the Free State platteland. Starts 1 January 2027. Hostel accommodation may be available depending on gender.",
+    who:"Completed BEd, Afrikaans as language of instruction, sport coaching and cultural activities, SACE registered.",
+    when:"Closes 5 October 2026",
+    email:"johnr@spsbrandfort.co.za",
+    phone:"051 821 2251",
+    url:"",
+    caution:"If you have had no reply by 15 October 2026, assume you were unsuccessful.",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-10-05"
+  },
+  {
+    title:"Foundation Phase teacher, SGB contract",
+    org:"Port Natal School, Umbilo, Durban",
+    kind:"teach",
+    prov:"kzn",
+    speed:"days",
+    stages:["new","teaching"],
+    paths:["rooted","moving","open"],
+    what:"SGB contract with a possibility of becoming permanent. Starts 2 November 2026. Send CV, cover letter, SACE number, police clearance and teaching certifications.",
+    who:"Foundation Phase educator with SACE registration and police clearance.",
+    when:"Closes Friday 9 October 2026, starts 2 November 2026",
+    email:"infoportnatal@gmail.com",
+    phone:"031 822 2317",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-10-09"
+  },
+  {
+    title:"Tourism educator, governing body post",
+    org:"Hoerskool Vryburg",
+    kind:"teach",
+    prov:"nw",
+    speed:"days",
+    stages:["new","teaching"],
+    paths:["rooted","open"],
+    what:"SGB post starting January 2027. Medium of instruction is Afrikaans and English. You can email your CV or hand it in at reception during school hours.",
+    who:"Relevant academic qualifications and SACE registration.",
+    when:"Closes 9 October 2026, starts January 2027",
+    email:"admin@vryburg.net",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-10-09"
+  },
+  {
+    title:"Business Studies FET educator, Grades 10 to 12",
+    org:"Lotus School of Excellence",
+    kind:"teach",
+    prov:"gp",
+    speed:"days",
+    stages:["teaching"],
+    paths:["rooted","growing","open"],
+    what:"For 2027. Experience teaching Creative Arts is an advantage. Send a covering letter and certified copies of all academic and professional qualifications with your CV.",
+    who:"South African citizen, appropriate qualification for the subject, at least five years of teaching experience, SACE registered, proven record of teaching at Matric level.",
+    when:"Closes 16 October 2026",
+    email:"vacanciesatlotus@gmail.com",
+    phone:"011 857 1078",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-10-16"
+  },
+  {
+    title:"Foundation Phase Afrikaans class, governing body post",
+    org:"School name not readable on the scan",
+    kind:"teach",
+    prov:"unk",
+    speed:"formal",
+    stages:["new","teaching"],
+    paths:["rooted","open"],
+    what:"SGB Foundation Phase post starting 1 January 2027. The school wants Funda Wande and Bala Wande training, Christian values, and sport or culture coaching. Send an application letter and full CV with certified proof to the principal.",
+    who:"BEd Foundation Phase or a suitable qualification, Funda Wande and Bala Wande trained, valid SACE certificate.",
+    when:"Closes 30 October 2026 at 12:00",
+    email:"wps@cwps.co.za",
+    phone:"",
+    url:"",
+    caution:"The school name and province did not come through clearly on the scanned advert. Email and ask which school this is and where it is before you apply.",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-10-30"
+  },
+  {
+    title:"Afrikaans First Additional Language, Grades 8 to 11, maternity contract",
+    org:"A school in Kempton Park",
+    kind:"teach",
+    prov:"gp",
+    speed:"days",
+    stages:["new","teaching"],
+    paths:["moving","open"],
+    what:"Maternity leave contract running February to the end of May. A short, well-defined contract, good for building experience and a reference.",
+    who:"Relevant teaching qualification, SACE registered, experience teaching Afrikaans FAL at high school level, strong classroom management.",
+    when:"Contract runs February to end of May",
+    email:"hsnphs97@gmail.com",
+    phone:"",
+    url:"",
+    caution:"The school is not named in this advert and there is no closing date. Email and ask for the school name, the address and the closing date before you send documents.",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-10-31"
+  },
+  {
+    title:"FET Mathematics, Mathematical Literacy and Business Studies",
+    org:"Masibambane College, Orange Farm",
+    kind:"teach",
+    prov:"gp",
+    speed:"always",
+    stages:["new","teaching"],
+    paths:["rooted","growing","moving","open"],
+    what:"The college advertises FET posts in these subjects through its own website rather than a provincial system.",
+    who:"Qualified FET educators in the relevant subjects.",
+    when:"Check the college site for the current closing date",
+    email:"headmaster@masibambanecollege.co.za",
+    phone:"",
+    url:"https://www.masibambanecollege.co.za",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-11-30"
+  },
+  {
+    title:"Maternity relief and full-time governing body posts for 2027",
+    org:"Hoerskool Bellville",
+    kind:"teach",
+    prov:"wc",
+    speed:"formal",
+    stages:["new","teaching"],
+    paths:["rooted","growing","moving","open"],
+    what:"Two kinds of post at once. Maternity relief for Afrikaans Home Language Grades 8 to 12 from 11 January to 16 March 2027. Full-time SGB posts for 2027 in Afrikaans Home Language, Afrikaans HL with English FAL, Tourism and Social Sciences, and Music and Creative Arts. Afrikaans is the language of instruction.",
+    who:"Appropriate qualification with the specific subject as a major, SACE registered, certified academic records, valid police clearance. FET experience is a recommendation.",
+    when:"Closing date not readable on the scan",
+    email:"algemeen@hsbellville.co.za",
+    phone:"",
+    url:"",
+    caution:"The closing date did not come through on the scanned advert. Email the school to confirm it before you rely on this listing.",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-11-30"
+  },
+  {
+    title:"Afrikaans Home Language, Grades 10 to 12, WCED Post Level 1",
+    org:"Hoerskool Swellendam",
+    kind:"teach",
+    prov:"wc",
+    speed:"formal",
+    stages:["new","teaching"],
+    paths:["rooted","open"],
+    what:"A departmental post, so the province pays the salary on state scales. Athletics and netball coaching are a recommendation, as is culture coaching in debate, public speaking and revue.",
+    who:"Afrikaans III or Afrikaans-Nederlands III, PGCE, CAPS knowledge, computer literate in Word, Excel and PowerPoint, proven bilingualism, active in extra-curricular activities.",
+    when:"Closes 22 October 2026, interviews 12 November 2026",
+    email:"swelliehoof@swellendamhs.com",
+    phone:"028 050 2763",
+    url:"",
+    caution:"Send everything as ONE PDF, not separate documents. No feedback by 30 November means you were unsuccessful.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-22"
+  },
+  {
+    title:"External moderator, Physical Science",
+    org:"Campus of Things",
+    kind:"mark",
+    prov:"nat",
+    speed:"always",
+    stages:["teaching","beyond"],
+    paths:["growing","open"],
+    what:"Moderation work outside the state system. You evaluate exam papers and assessments, check them against academic standards and the curriculum, and give feedback to faculty. Flexible hours. Put 'External Moderator Application - Physical Science' in your subject line and send a CV with a short motivational letter.",
+    who:"Strong background in Physical Science, plus experience in moderation, teaching or a related field.",
+    when:"Open, no closing date given",
+    email:"k.strydom@campusofthings.com",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:""
+  },
+  {
+    title:"Six school posts across Gauteng: leads, coordinators, teachers and assistants",
+    org:"SPARK Schools",
+    kind:"teach",
+    prov:"gp",
+    speed:"days",
+    stages:["studying","new","teaching","beyond"],
+    paths:["rooted","growing","moving","open"],
+    what:"Six roles at once, with the monthly pay published, which is rare and useful. Education Program Lead at Theresa Park R26 724. Acting School Operations Coordinator at Silver Lakes R16 000. Foundation Phase English teacher, temporary, Soweto R20 808. Intermediate Phase general teacher, temporary junior, Rosslyn Hub R15 500. Teacher assistant, temporary, Johannesburg region. Teacher assistant, temporary, Pretoria and Tshwane region. The two assistant posts are open to people who are still studying.",
+    who:"Varies by role. The teacher assistant posts are the entry point if you are not yet fully qualified.",
+    when:"Posted 18 September 2026, check the listing for each closing date",
+    email:"",
+    phone:"",
+    url:"https://vacancieswithcollen.co.za/2026/09/18/spark-primary-school-vacancies-gauteng-18-september-2026/",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-10-18"
+  },
+  {
+    title:"Eastern Cape open post bulletins",
+    org:"Eastern Cape Department of Education",
+    kind:"dept",
+    prov:"ec",
+    speed:"always",
+    stages:["teaching","beyond"],
+    paths:["rooted","growing","open"],
+    what:"The Eastern Cape publishes its vacancies as numbered bulletins, including promotional posts for Departmental Head (HOD) and Deputy Principal. Always read the Addendum, Erratum and Withdrawal circular alongside the main bulletin, because posts get added, corrected and withdrawn after publication. Applications use the EDP 01 form with a CV and certified copies of your ID and qualifications.",
+    who:"Qualified educators. Promotional posts have their own experience requirements set out in each bulletin.",
+    when:"Published through the year. Closing dates are sometimes extended, so check for an extension notice.",
+    email:"",
+    phone:"",
+    url:"https://www.eccurriculum.co.za/Bulletins/2026/30%20Extension%20Vol%205%200f%202026%20Departmental%20Heads%20and%20Deputy%20principals.pdf",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:""
+  },
+  {
+    title:"Teacher assistant and administrator",
+    org:"St Evelyn Preparatory School, Oakdene, Johannesburg South",
+    kind:"start",
+    prov:"gp",
+    speed:"days",
+    stages:["studying","new"],
+    paths:["growing","moving","open"],
+    what:"Combined assistant and admin role. Reliable transport is required because of where the school sits.",
+    who:"One to two years of admin experience, ideally in a school, plus a year as a teacher assistant or teacher. An ECD qualification is preferred.",
+    when:"Closed 18 September 2026",
+    email:"mishkah@stevelyn.org.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-09-19",
+    expires:"2026-09-18"
+  },
+  {
+    title:"Online locum: Mathematical Literacy and Consumer Studies, Term 4",
+    org:"Campus of Things",
+    kind:"teach",
+    prov:"nat",
+    speed:"now",
+    ptype:"contract",
+    stages:["new", "teaching"],
+    paths:["moving", "open"],
+    what:"A 100% online teaching post for Term 4 of 2026, starting Monday 12 October. It may become permanent in 2027. You must be able to teach BOTH subjects and be available to start on Monday.",
+    who:"Able to teach Mathematical Literacy and Consumer Studies, strong subject knowledge, good communication skills.",
+    when:"Starts Monday 12 October 2026, apply as soon as possible",
+    email:"y.geldenhuys@campusofthings.com",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-12"
+  },
+  {
+    title:"Six-week contract: Senior Phase Afrikaans FAL and FET History",
+    org:"Lakeside Education Academy, Lakeside, Cape Town",
+    kind:"teach",
+    prov:"wc",
+    speed:"now",
+    ptype:"contract",
+    stages:["new", "teaching"],
+    paths:["moving", "open"],
+    what:"Short temporary contract. Send your CV and relevant qualifications.",
+    who:"Relevant teaching qualification, valid SACE registration.",
+    when:"No closing date given",
+    email:"applications@educationacademy.co.za",
+    phone:"",
+    url:"",
+    caution:"No closing date or start date is given. It is a short contract, so apply now and ask when it starts.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-23"
+  },
+  {
+    title:"Afrikaans Grade 7 teacher, start as soon as possible",
+    org:"Curro Soshanguve",
+    kind:"teach",
+    prov:"gp",
+    speed:"now",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Starts as soon as possible. Lift clubs are available from Montana and Pretoria North. The advert says applicants must NOT currently be studying.",
+    who:"Fully qualified teacher, SACE registered, Afrikaans as a subject specialisation.",
+    when:"Start as soon as possible",
+    email:"Cerese.s@curro.co.za",
+    phone:"",
+    url:"",
+    caution:"No closing date is given and the school wants someone quickly. Apply this week.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-23"
+  },
+  {
+    title:"Foundation Phase Grade 2 relief post, departmental",
+    org:"Boshof Primere Skool, Boshof",
+    kind:"teach",
+    prov:"fs",
+    speed:"now",
+    ptype:"substitute or relief",
+    stages:["new", "teaching"],
+    paths:["moving", "open"],
+    what:"Departmental relief post available immediately, running from 7 October 2026 to January 2027.",
+    who:"Afrikaans-speaking Foundation Phase teacher.",
+    when:"Available immediately",
+    email:"bsfint1@gmail.com",
+    phone:"",
+    url:"",
+    caution:"The post started on 7 October and there is no closing date. Apply today.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-16"
+  },
+  {
+    title:"English teacher Grades 8 and 9, starting October 2026",
+    org:"School in Randburg, advertised on ditto.jobs",
+    kind:"teach",
+    prov:"gp",
+    speed:"now",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Starts in October 2026. Apply through the ditto.jobs listing.",
+    who:"Recognised teaching qualification, confident teaching English at Grades 8 and 9.",
+    when:"Starts October 2026",
+    email:"",
+    phone:"",
+    url:"https://www.ditto.jobs/jobs/682972/",
+    caution:"The school is not named in the advert. Check the listing for the school name before you send documents.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-23"
+  },
+  {
+    title:"Afrikaans FAL Foundation Phase teacher, immediate start",
+    org:"Sol Plaatje Laerskool, Mahikeng",
+    kind:"teach",
+    prov:"nw",
+    speed:"now",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Urgent post in the Ngaka Modiri Molema District, Mahikeng area office. The successful person starts teaching immediately. Send all important documents to the principal, Mr Nchoe.",
+    who:"Qualified Foundation Phase teacher who can teach Afrikaans FAL.",
+    when:"Immediate start",
+    email:"solplaatjep@gmail.com",
+    phone:"062 475 6746",
+    url:"",
+    caution:"No closing date is given. Phone the principal first.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-23"
+  },
+  {
+    title:"Teaching posts at schools in the UAE, immediate start",
+    org:"Konnekts EdRecruit (recruitment agency)",
+    kind:"work",
+    prov:"int",
+    speed:"now",
+    stages:["teaching"],
+    paths:["moving", "growing", "open"],
+    what:"An agency recruiting Art, Music and Elementary teachers for schools in the United Arab Emirates. Immediate opportunities.",
+    who:"Bachelor's degree in the relevant field and at least two years of teaching experience.",
+    when:"Apply as soon as possible",
+    email:"jobs@konnektsrecruitment.com",
+    phone:"",
+    url:"",
+    caution:"This is a recruitment agency. A real recruiter is paid by the school, not by you. Never pay a placement fee before you have a signed contract.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-31"
+  },
+  {
+    title:"Northern Cape Vacancy Circular 1 of 2026: promotional posts",
+    org:"Northern Cape Department of Education",
+    kind:"dept",
+    prov:"nc",
+    speed:"days",
+    ptype:"departmental",
+    stages:["teaching", "beyond"],
+    paths:["rooted", "growing", "open"],
+    what:"The Northern Cape's list of promotional posts, published 9 October 2026. The list is available in English and Afrikaans on the SAOU (teachers' union) website.",
+    who:"Serving educators who meet the experience requirements for each promotional post. Read the circular for each post.",
+    when:"Closes 16 October 2026",
+    email:"",
+    phone:"",
+    url:"https://www.saou.co.za/vacancy-lists",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-16"
+  },
+  {
+    title:"Free State principal posts: Vacancy List 2 of 2026",
+    org:"Free State Department of Education",
+    kind:"dept",
+    prov:"fs",
+    speed:"days",
+    ptype:"departmental",
+    stages:["teaching"],
+    paths:["rooted", "growing", "open"],
+    what:"28 Post Level 4 principal posts: Xhariep 2, Mangaung Metro 4, Lejweleputswa 8, Thabo Mofutsanyana 6, Fezile Dabi 8. Use ONLY the new Z83 form, send a separate application for each post, and quote the full post number. Deliver or post to the right district office. Emailed and faxed applications are not accepted. Competency assessments are part of selection.",
+    who:"REQV 13 with teacher training, SACE, at least seven years of relevant educator experience. Detailed CV and certified copies (not older than six months) of ID, Grade 12, all qualifications and SACE.",
+    when:"Closes Monday 12 October 2026 at 16:00",
+    email:"",
+    phone:"",
+    url:"https://irp.cdn-website.com/c0cc1c10/files/uploaded/INSTITUTION+BASED+PROMOTIONAL+POSTS+-+VACANCY+LIST+2+OF+2026.pdf",
+    caution:"An old Z83 or any other form means automatic disqualification.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-12"
+  },
+  {
+    title:"Three-year ECATL posts: Coordinator and Education Change Agent",
+    org:"Free State Department of Education, Lejweleputswa District",
+    kind:"start",
+    prov:"fs",
+    speed:"days",
+    salary:"R6 500 or R4 500 a month (stipend)",
+    stages:["new", "beyond"],
+    paths:["growing", "open"],
+    what:"Two stipend posts for three years. ECATL Coordinator, R6 500 a month, reference PS18/2026/01. Education Change Agent, R4 500 a month, reference PS18/2026/02, aimed at unemployed youth. Four schools are named, but only two people will be appointed, each supporting more than one school. Send the new Z83 and a detailed CV as ONE attachment no bigger than 15 MB. Enquiries to Ms C Nhlapo.",
+    who:"Coordinator: Grade 12, five years of relevant experience and the specified training. Change Agent: Grade 12, relevant training, one year of experience working with young people.",
+    when:"Closes 12 October 2026",
+    email:"erecruitment3@fseducation.gov.za",
+    phone:"083 533 5657",
+    url:"https://www.education.fs.gov.za/wp-content/uploads/2026/09/ADVERT-FOR-ECATL-POSTS-LEJWELEPUTSWA.pdf",
+    caution:"Temporary stipend posts with no promise of permanent work afterwards. The advert gives conflicting instructions about qualification copies, so check with Ms Nhlapo before you submit.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-12"
+  },
+  {
+    title:"Early learning practitioner",
+    org:"The Hill Pre-Primary School, Bishopscourt, Cape Town",
+    kind:"teach",
+    prov:"wc",
+    speed:"days",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Play-based teaching at a Southern Suburbs pre-primary. Market-related pay based on experience. Send your CV, certified certificates, SACE certificate and a brief cover letter.",
+    who:"BEd Foundation Phase or another appropriate qualification, SACE, at least two years with young children in a school, police clearance and Sexual Offenders Register clearance.",
+    when:"Closes Monday 12 October 2026",
+    email:"Info@thehillpreprimary.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-12"
+  },
+  {
+    title:"External exam invigilators, Vereeniging Campus",
+    org:"Sedibeng TVET College",
+    kind:"mark",
+    prov:"gp",
+    speed:"days",
+    stages:["new", "teaching", "beyond"],
+    paths:["growing", "moving", "open"],
+    what:"Invigilating the college's 2026 exams. Reference INV/VER/OCT/2026. Applications are ONLINE ONLY. Email and hand delivery are not considered. You need a CV, a completed Z83, a certified ID and certified qualifications not older than six months.",
+    who:"An appropriate degree or National Diploma. Open to unemployed graduates and diploma holders.",
+    when:"Closes 15 October 2026",
+    email:"",
+    phone:"",
+    url:"https://www.sedcol.co.za/JobApplication.aspx",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-15"
+  },
+  {
+    title:"Six-week Afrikaans relief post, Grades 11 and 12, early 2027",
+    org:"Hoerskool Wonderboom, Pretoria",
+    kind:"teach",
+    prov:"gp",
+    speed:"formal",
+    ptype:"substitute or relief",
+    stages:["new", "teaching"],
+    paths:["moving", "open"],
+    what:"Relief post from February 2027 to the end of the first term. Contact Ms T. Jacobs.",
+    who:"SACE registered, able to teach Afrikaans to Grades 11 and 12, good knowledge of CAPS and the assessment requirements for those grades.",
+    when:"No closing date given, post runs February to end of Term 1, 2027",
+    email:"jacobs.a@wonnies.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-12-15"
+  },
+  {
+    title:"Grade 8 posts for 2027: Afrikaans FAL, and Mathematics with Technology",
+    org:"School in Johannesburg CBD, advertised on ditto.jobs",
+    kind:"teach",
+    prov:"gp",
+    speed:"formal",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Two Grade 8 posts from January 2027. Afrikaans FAL applications: ditto.jobs/jobs/318326. Mathematics and Technology applications: ditto.jobs/jobs/660832.",
+    who:"Qualified for the subject at Senior Phase.",
+    when:"Starts January 2027",
+    email:"",
+    phone:"",
+    url:"https://www.ditto.jobs/jobs/660832/",
+    caution:"The school is not named in the advert. Check the listing for the school name before you send documents.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-30"
+  },
+  {
+    title:"Foundation Phase educator",
+    org:"Greenfield Girls' Primary School, Cape Town",
+    kind:"teach",
+    prov:"wc",
+    speed:"formal",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Girls' primary school looking for qualified, experienced Foundation Phase teachers. Full details are on the Old School Ties listing.",
+    who:"Suitably qualified and experienced Foundation Phase teacher.",
+    when:"See the listing for the closing date",
+    email:"",
+    phone:"",
+    url:"https://oldschoolties.co.za/jobs/foundation-phase-junior-primary/foundation-phase-educatorgfgpsct/",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-30"
+  },
+  {
+    title:"Natural Sciences Grades 8 and 9 (two posts) and Accounting Grades 10 to 12",
+    org:"HTS Witbank, eMalahleni",
+    kind:"teach",
+    prov:"mp",
+    speed:"formal",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Two Natural Sciences posts for Grades 8 and 9, which may become Physical Sciences posts, and one Accounting post for Grades 10 to 12. The advert is in Afrikaans.",
+    who:"Qualified for the subject.",
+    when:"No closing date given",
+    email:"ronel@htswitbank.co.za",
+    phone:"",
+    url:"",
+    caution:"No closing date is given. Email to ask whether the posts are still open and which language you would teach in.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-30"
+  },
+  {
+    title:"School counsellor",
+    org:"Pretoria High School for Girls",
+    kind:"dept",
+    prov:"gp",
+    speed:"formal",
+    ptype:"support staff",
+    stages:["teaching", "beyond"],
+    paths:["rooted", "growing", "open"],
+    what:"A counselling post at the school. Full details and how to apply are on the school's vacancies page.",
+    who:"See the full advert.",
+    when:"See the advert for the closing date",
+    email:"",
+    phone:"",
+    url:"https://www.phsg.org.za/vacancies",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-30"
+  },
+  {
+    title:"FET teachers: humanities, commerce, English and LO",
+    org:"Streetlight Schools",
+    kind:"teach",
+    prov:"gp",
+    speed:"formal",
+    stages:["teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Facilitator roles in a blended, technology-driven, project-based school for underserved communities. Subjects: Tourism, History and Geography; Economics, Business Studies and Accounting; English and Life Orientation, all Grades 10 to 12. Small classes and ongoing teacher development.",
+    who:"At least two years of FET teaching. Grade 12 experience is an advantage. BEd, PGCE or equivalent, valid SACE, police clearance. Ed-tech experience is an advantage.",
+    when:"No closing date given",
+    email:"principal@streetlightschools.org",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-30"
+  },
+  {
+    title:"Departmental post, Grades 4 to 7, single transfer only",
+    org:"Biggarsberg Primary School, Glencoe",
+    kind:"teach",
+    prov:"kzn",
+    speed:"formal",
+    ptype:"departmental",
+    stages:["teaching"],
+    paths:["rooted", "open"],
+    what:"A single transfer post for Afrikaans and English, Grades 4 to 7, from 1 January 2027. A transfer post is for educators who already hold a permanent departmental post and want to move schools. It is not open to new appointments.",
+    who:"Educators in permanent departmental employment who qualify for a transfer.",
+    when:"Effective 1 January 2027",
+    email:"",
+    phone:"079 394 3112",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-30"
+  },
+  {
+    title:"FET teachers for many subjects",
+    org:"Unnamed school or agency",
+    kind:"teach",
+    prov:"unk",
+    speed:"formal",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"FET posts in Afrikaans HL and FAL, English HL and FAL, Mathematics and Maths Literacy, Physical and Life Sciences, Business Studies, Geography and History, LO, CAT and Consumer Studies. The advert is in Afrikaans.",
+    who:"Qualified and SACE registered.",
+    when:"No closing date given",
+    email:"hbinding@live.com",
+    phone:"",
+    url:"",
+    caution:"No school, agency, town or closing date is named. Before you send anything, ask who is hiring, where, and by when. If you do not get all three, leave it.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-09"
+  },
+  {
+    title:"Mathematics teacher, Grades 8 to 12",
+    org:"Unnamed school, forwarded by a colleague",
+    kind:"teach",
+    prov:"unk",
+    speed:"formal",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Someone is looking for a Mathematics specialist to teach Grades 8 to 12. Forward your CV.",
+    who:"Teacher who specialised in Mathematics.",
+    when:"No closing date given",
+    email:"qondulwazi25@gmail.com",
+    phone:"",
+    url:"",
+    caution:"No school, town or closing date is named. Ask for the school name, address and closing date before you send any documents.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-09"
+  },
+  {
+    title:"Afrikaans teacher near Kempton Park",
+    org:"Unnamed school, Kempton Park area",
+    kind:"teach",
+    prov:"gp",
+    speed:"formal",
+    salary:"R5 000 per month",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"A school near Kempton Park wants an Afrikaans teacher who lives in or around the area. Contact by WhatsApp on 078 861 8616 or 079 849 9332.",
+    who:"Afrikaans teacher living in or around Kempton Park.",
+    when:"No closing date given",
+    email:"",
+    phone:"078 861 8616",
+    url:"",
+    caution:"The school is not named. R5 000 a month is far below a qualified teacher's normal pay, so ask exactly what the job involves, the hours, and whether it is a school governing body post before you accept.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-09"
+  },
+  {
+    title:"Grade 00 educator and aftercare assistant, one-year contract",
+    org:"Huppelland Pre-Primer, Laerskool Jan van Riebeeck, Cape Town",
+    kind:"teach",
+    prov:"wc",
+    speed:"now",
+    ptype:"contract",
+    stages:["studying", "new", "teaching"],
+    paths:["rooted", "open"],
+    what:"Two posts at an Afrikaans pre-primary for 2027. One is a Grade 00 educator for 3 to 4 year olds. The other is an aftercare assistant, which needs an ECD certificate or diploma rather than a degree. Send a motivation letter with your CV.",
+    who:"Educator: BEd Foundation Phase, SACE and police clearance, confident in Word, Excel and Canva. Assistant: Afrikaans-speaking, ECD certificate or diploma, experience with 3 to 6 year olds.",
+    when:"Closes Sunday 11 October 2026",
+    email:"admin@jvrprim.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-11"
+  },
+  {
+    title:"Senior Phase Mathematics Grades 7 to 9 and Creative Arts Grade 9, WCED contract",
+    org:"Alpha Primary, Durbanville",
+    kind:"teach",
+    prov:"wc",
+    speed:"now",
+    ptype:"contract",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Term 4 contract starting 13 October 2026. Afrikaans medium. Knowledge of coding and robotics counts in your favour, and extra-mural involvement is compulsory.",
+    who:"CAPS training and experience, strong in Senior Phase Mathematics, SACE registered, good discipline and classroom management.",
+    when:"Closes 11 October 2026, starts 13 October 2026",
+    email:"alphapsbetrekkings@gmail.com",
+    phone:"021 976 1493",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-11"
+  },
+  {
+    title:"Mathematics Grades 6 and 7, isiZulu FAL Grades 2 and 3",
+    org:"Bethel Independent School, Hlabisa",
+    kind:"teach",
+    prov:"kzn",
+    speed:"now",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Independent primary school. Hand in your application at the school or email it. Shortlisting is 12 October and interviews are 14 October at 08:00. The school warns applicants not to fall for scams asking for payment for this post.",
+    who:"BEd or a relevant qualification, SACE registered, English proficiency, computer literate, three referees from the last five years, certified copies of qualifications and ID.",
+    when:"Closes Monday 12 October 2026 at 08:00",
+    email:"bethelindependentschool@gmail.com",
+    phone:"066 195 8503",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-12"
+  },
+  {
+    title:"FET Accounting Grades 10 to 12, governing body post",
+    org:"Rietondale High School, Gezina, Pretoria",
+    kind:"teach",
+    prov:"gp",
+    speed:"now",
+    ptype:"governing body",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"SGB Post Level 1 starting 1 January 2027, with a register class, extra-murals and a full academic timetable. Pay is discussed at the interview. Applications missing any requested document are not considered.",
+    who:"BEd Senior Phase and FET, or a degree plus PGCE. SACE registered. Police clearance. Send CV, ID, matric certificate, qualifications, academic records and SACE certificate.",
+    when:"Closes Monday 12 October 2026 at 12:00",
+    email:"vacancies@rietondalehs.co.za",
+    phone:"012 329 0574",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-12"
+  },
+  {
+    title:"Mathematics, Mathematical Literacy and Technical Mathematics, Grades 10 to 12",
+    org:"Hoerskool Jan Viljoen, Randfontein",
+    kind:"teach",
+    prov:"gp",
+    speed:"now",
+    ptype:"departmental",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Departmental post. You must apply on the GDE Unemployed Educators Database AND email your CV with supporting documents to the principal. The school teaches in English and Afrikaans.",
+    who:"Registered on the GDE Unemployed Educators Database, SACE registered, BEd with academic records, police clearance, contactable references.",
+    when:"Closes 12 October 2026",
+    email:"principal@hsjanviljoen.com",
+    phone:"011 693 5204",
+    url:"https://unemployededucators.gauteng.gov.za/Logins.aspx",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-12"
+  },
+  {
+    title:"Departmental posts for 2027: languages, EGD, Agricultural Technology, Mathematics",
+    org:"Hoerskool Hartswater",
+    kind:"teach",
+    prov:"nc",
+    speed:"now",
+    ptype:"departmental",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Three posts, all Grades 10 to 12: English Home Language with Afrikaans FAL; Engineering Graphics and Design with Agricultural Technology; and Mathematics. Teaching is in Afrikaans and English. Mention your extra-mural activities.",
+    who:"Fully qualified. Certified CV, ID, qualifications, SACE certificate and testimonials.",
+    when:"Closes 12 October 2026, starts 1 January 2027",
+    email:"wvanheerden@hshartswater.com",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-12"
+  },
+  {
+    title:"Full-time, part-time and internship posts for 2027, salaries published",
+    org:"Langebaanweg Primary School",
+    kind:"teach",
+    prov:"wc",
+    speed:"now",
+    salary:"R22 431.77 per month (full-time posts)",
+    stages:["studying", "new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Full-time educators at R22 431.77 a month plus a full-month bonus after a calendar year: two Foundation Phase posts (Grade 1 and Grade 3 English), one Intermediate Phase post (Natural Science and English FAL) and one Senior Phase post (English and Afrikaans HL, EMS). A part-time Grade 4 post at R15 000 a month, class of about 10, no extra-murals. An ICT internship at R9 000 a month for registered Education students, covering Greenshoots, coding and robotics, and some bus duty. Send ONE PDF with application letter, CV, current qualifications and three references.",
+    who:"The right qualification for the post, relevant experience, three references on character and ability. PDP, a Code 10 licence, netball umpiring, rugby or athletics coaching, piano and choir all count in your favour.",
+    when:"Closes Monday 12 October 2026 at 12:00",
+    email:"lslw.sgb@gmail.com",
+    phone:"",
+    url:"",
+    caution:"The email address starts with a lowercase L, not a capital i: lslw.sgb@gmail.com",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-12"
+  },
+  {
+    title:"Principal of an early childhood centre",
+    org:"Northpine Educare Centre, Brackenfell",
+    kind:"teach",
+    prov:"wc",
+    speed:"now",
+    stages:["teaching"],
+    paths:["rooted", "growing", "open"],
+    what:"Runs the creche, its staff and its paperwork, and reports to the committee. Preference goes to applicants from Northpine, Brackenfell and Kraaifontein. Applications are DROPPED OFF at the creche before 11:30 on any weekday, marked for Ms Debbie Brown. Email applications are not accepted.",
+    who:"ECD qualification (NQF 6 preferred), five years in a similar position with babies and toddlers, driver's licence and own transport, police clearance, valid first aid certificate.",
+    when:"Closes 12 October 2026, starts January 2027",
+    email:"",
+    phone:"021 981 4226",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-12"
+  },
+  {
+    title:"Maternity substitute, Tshivenda and Natural Science Grades 4 to 7",
+    org:"Mabila Primary, Niani West Circuit, Vhembe East",
+    kind:"teach",
+    prov:"lp",
+    speed:"now",
+    ptype:"substitute or relief",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Circuit-advertised maternity post near Tshilamba. Teaching is in Tshivenda and English. Applications go to the Circuit Manager, Niani West Circuit. Shortlisting is 13 October and interviews 20 October.",
+    who:"REQV 13 or a relevant degree.",
+    when:"Closes 12 October 2026",
+    email:"",
+    phone:"071 551 3428",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-12"
+  },
+  {
+    title:"Permanent post, Intersen Phase Sepedi and Social Sciences",
+    org:"Selala Primary School, Driekop",
+    kind:"teach",
+    prov:"lp",
+    speed:"now",
+    ptype:"permanent",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Permanent post advertised through the Driekop circuit. Applications must be HAND DELIVERED. Shortlisting 14 October, interviews 20 October.",
+    who:"REQV 13, application letter, detailed CV, certified qualifications, ID, matric and SACE, and a completed LPDE-1 form.",
+    when:"Closes 13 October 2026 at 13:00",
+    email:"",
+    phone:"066 274 7518",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-13"
+  },
+  {
+    title:"Temporary Mathematics Grades 4 to 7, free accommodation",
+    org:"Perdeberg Primere Skool, between Petrusburg and Kimberley",
+    kind:"teach",
+    prov:"fs",
+    speed:"now",
+    ptype:"departmental",
+    stages:["new", "teaching"],
+    paths:["moving", "open"],
+    what:"Departmental temporary post from 12 October to 11 December 2026, with FREE accommodation. The advert is in Afrikaans. Phone the principal directly.",
+    who:"Qualified to teach Intermediate and Senior Phase Mathematics.",
+    when:"Runs 12 October to 11 December 2026",
+    email:"",
+    phone:"072 264 5225",
+    url:"",
+    caution:"There is no closing date on this advert and the post starts on 12 October, so phone now.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-16"
+  },
+  {
+    title:"Substitute Mathematics Grades 4 to 6, departmental",
+    org:"Christiaan de Wet Combined School, Dewetsdorp",
+    kind:"teach",
+    prov:"fs",
+    speed:"now",
+    ptype:"substitute or relief",
+    stages:["new", "teaching"],
+    paths:["moving", "open"],
+    what:"Starts as soon as possible and runs to the end of 2026. Apply now even though the closing date is later, because the school needs someone in the classroom.",
+    who:"Relevant teaching qualification, experience in the subject, SACE registered, police clearance and vetting.",
+    when:"Closes 14 November 2026, start as soon as possible",
+    email:"principal@dewetsdorp.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-14"
+  },
+  {
+    title:"Temporary Foundation Phase educator, English and Afrikaans",
+    org:"Schonkenville Combined School, Parys",
+    kind:"teach",
+    prov:"fs",
+    speed:"now",
+    ptype:"substitute or relief",
+    stages:["new", "teaching"],
+    paths:["moving", "open"],
+    what:"PL1 temporary post for October to December 2026. You need a Z83 form, available from the Free State Education website or any school or district office. First preference goes to people on the Free State Unemployed Educators Database.",
+    who:"Teacher's diploma or Education degree, SACE, police clearance and vetting, bilingual in English and Afrikaans.",
+    when:"October to December 2026",
+    email:"schonkenis@parys.co.za",
+    phone:"",
+    url:"",
+    caution:"No closing date is given and the post has already started. Apply immediately or phone the school first.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-23"
+  },
+  {
+    title:"Natural Science and Technology, Grades 4 and 6",
+    org:"Boaramelo Combined School",
+    kind:"teach",
+    prov:"unk",
+    speed:"now",
+    ptype:"substitute or relief",
+    stages:["new", "teaching"],
+    paths:["moving", "open"],
+    what:"Short post from October to December 2026. Drop your CV at the school or email it.",
+    who:"Suitably qualified for Natural Science and Technology.",
+    when:"October to December 2026",
+    email:"boaramelocs@gmail.com",
+    phone:"078 111 8717",
+    url:"",
+    caution:"No closing date and no town are given on this advert. Phone the principal to confirm both before you apply.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-23"
+  },
+  {
+    title:"Afrikaans Home Language, GET and FET, contract",
+    org:"Aquila High School, Durbanville",
+    kind:"teach",
+    prov:"wc",
+    speed:"now",
+    ptype:"contract",
+    stages:["new", "teaching"],
+    paths:["moving", "open"],
+    what:"PL1 contract from 6 October to 31 December 2026. Applications are wanted as soon as possible.",
+    who:"Qualified for GET and FET, excellent Afrikaans, CAPS trained. Send cover letter, CV, qualifications, transcripts, proof of SACE and two references.",
+    when:"Apply as soon as possible",
+    email:"hhorne@aquilahs.co.za",
+    phone:"021 565 0157",
+    url:"",
+    caution:"No closing date is given and the contract has already started. Apply today or phone first.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-23"
+  },
+  {
+    title:"Grade RR Foundation Phase teacher, governing body post",
+    org:"C en N Preprimere Meisieskool Oranje, Bloemfontein",
+    kind:"teach",
+    prov:"fs",
+    speed:"days",
+    ptype:"governing body",
+    stages:["new", "teaching"],
+    paths:["rooted", "open"],
+    what:"Afrikaans pre-primary post from 1 January 2027. Hand your CV in at the pre-primary office or email it.",
+    who:"Foundation Phase teaching qualification, computer literate, valid driver's licence, SACE, police clearance and a National Register for Sex Offenders clearance.",
+    when:"Closes Wednesday 14 October 2026 at 12:00",
+    email:"kantoor@oranjepp.co.za",
+    phone:"051 448 4149",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-14"
+  },
+  {
+    title:"Afrikaans Home Language Grades 8 to 10, English FAL Grades 8 to 12",
+    org:"Hoer Landbouskool Oakdale, Riversdal",
+    kind:"teach",
+    prov:"wc",
+    speed:"days",
+    ptype:"governing body",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Two governing body posts from 1 January 2027 at an agricultural high school. The package is described as competitive and includes a pension. Say clearly which of Oakdale's extra-murals you can help with.",
+    who:"A four-year teaching qualification with training in the subject, SACE certificate.",
+    when:"Closes 14 October 2026",
+    email:"info@oakdale.co.za",
+    phone:"028 713 2549",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-14"
+  },
+  {
+    title:"Foundation Phase relief post, WCED",
+    org:"Joostenberg Primer, Muldersvlei",
+    kind:"teach",
+    prov:"wc",
+    speed:"days",
+    ptype:"substitute or relief",
+    stages:["new", "teaching"],
+    paths:["moving", "open"],
+    what:"Relief post from 16 October to 9 December 2026. Afrikaans medium, and the school is a full-service school, so you support learners with extra needs. Hand in or email a full CV with certified documents.",
+    who:"BEd, SACE registered, willing to offer extra-murals, good discipline.",
+    when:"Closes 14 October 2026",
+    email:"jbgfworkspace@gmail.com",
+    phone:"021 884 4024",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-14"
+  },
+  {
+    title:"Permanent post, Mathematical Literacy Grades 10 to 12 and Life Orientation Grades 8 to 12",
+    org:"Marole Secondary School, Driekop",
+    kind:"teach",
+    prov:"lp",
+    speed:"days",
+    ptype:"permanent",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Applications are HAND DELIVERED to the school in Sehlaku Village, Maandagshoek. Faxed and emailed documents are not accepted. Shortlisting is 15 October.",
+    who:"Completed LPED01 form, detailed CV, certified qualifications, SACE and ID.",
+    when:"Closes 14 October 2026 at 14:00",
+    email:"",
+    phone:"082 544 7438",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-14"
+  },
+  {
+    title:"Coding and Robotics facilitator (Grades 4 to 7) and IT manager",
+    org:"Laerskool Mikro, Kuils River",
+    kind:"teach",
+    prov:"wc",
+    speed:"days",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"One combined role from 1 January 2027: teaching coding and robotics and looking after the school's computers and network.",
+    who:"Teaching experience required. Experience in coding and robotics, IT maintenance and network management counts. Bilingual in English and Afrikaans.",
+    when:"Closes Wednesday 14 October 2026",
+    email:"aansoeke@laerskoolmikro.co.za",
+    phone:"021 903 2126",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-14"
+  },
+  {
+    title:"Afrikaans Grades 4 to 7, governing body post",
+    org:"Laerskool Skuilkrans",
+    kind:"teach",
+    prov:"unk",
+    speed:"days",
+    ptype:"governing body",
+    stages:["new", "teaching"],
+    paths:["rooted", "open"],
+    what:"SGB appointment from 1 January 2027. Salary is available on request. Contact person is Ms Zelda Fourie.",
+    who:"SACE registered, teaching qualification, three or more years of experience counts, Afrikaans-speaking, SASAMS and D6 skills, extra-murals required.",
+    when:"Closes 14 October 2026",
+    email:"dps@skuilkrans.com",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-14"
+  },
+  {
+    title:"FET Technical subjects, Grades 10 to 12",
+    org:"Bedfordview High School, Malvern East",
+    kind:"teach",
+    prov:"gp",
+    speed:"days",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Any FET technical subject: Electrical Technology, Mechanical Technology, EGD, Mathematics or Physical Sciences. Technical Mathematics or Technical Sciences is a big advantage. Email, or hand in at reception between 09:00 and 13:00. Enquiries to the principal, Mr M.C. Tshisudi.",
+    who:"Suitably qualified and experienced. CV with three references, certified ID, matric, SACE and qualifications, police clearance.",
+    when:"Closes 15 October 2026",
+    email:"mphotshisudi01@gmail.com",
+    phone:"066 307 0706",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-15"
+  },
+  {
+    title:"FET English Home Language and History",
+    org:"Holy Family College, Glenmore, Durban",
+    kind:"teach",
+    prov:"kzn",
+    speed:"days",
+    stages:["teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Experienced FET teacher wanted from January 2027. Send your CV with three traceable references.",
+    who:"Experienced FET English Home Language and History teacher.",
+    when:"Closes 15 October 2026",
+    email:"head@holyfamilycollege.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-15"
+  },
+  {
+    title:"History and Tourism teacher",
+    org:"Muir College",
+    kind:"teach",
+    prov:"ec",
+    speed:"days",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Boys' school. Willingness to help with co-curricular and extra-mural programmes is expected.",
+    who:"Relevant teaching qualification, SACE registration, sound subject knowledge.",
+    when:"Closes 15 October 2026 at 12:00",
+    email:"vacancies@muircollege.co.za",
+    phone:"",
+    url:"",
+    caution:"The advert calls 15 October a Monday, but it is a Thursday. Apply before then to be safe.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-15"
+  },
+  {
+    title:"Four posts: admin officer, Afrikaans HL, Mathematics full-time and half-day",
+    org:"Hoerskool Framesby, Gqeberha",
+    kind:"teach",
+    prov:"ec",
+    speed:"days",
+    ptype:"governing body",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Afrikaans-medium SGB posts from 1 January 2027, paid in line with departmental scales. Mathematics Grades 8 to 12 full post; Mathematics Grades 8 to 12 half-day post, where retired teachers are also invited; Afrikaans Home Language Grades 8 to 12; and an administrative officer, who MUST mention SASAMS experience in the first paragraph. Enquiries to Mr Marius Germishuys.",
+    who:"Teachers: full qualification, SACE, computer literate, willing to take a register class. Admin officer: SASAMS, Microsoft Office and Sage Pastel.",
+    when:"Closes 16 October 2026",
+    email:"skoolhoof@framesby.co.za",
+    phone:"041 360 1257",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-16"
+  },
+  {
+    title:"Consumer Studies, English, Business Studies and Geography, Grades 10 to 12",
+    org:"Potchefstroom Gimnasium",
+    kind:"teach",
+    prov:"nw",
+    speed:"days",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Departmental and governing body posts from January 2027 with a competitive salary and benefits package. The advert is in Afrikaans. Attach a cover letter and certified documents.",
+    who:"Tertiary qualification with degree and subjects clearly shown, SACE certificate, ID, police clearance if you have one.",
+    when:"Closes 16 October 2026 at 12:00",
+    email:"aansoeke@gimmies.co.za",
+    phone:"",
+    url:"",
+    caution:"No feedback by 30 October means you were unsuccessful.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-16"
+  },
+  {
+    title:"Mathematics and Physical Sciences, Grades 10 to 12",
+    org:"Pretoria-Tuine Ingenieurskool van Spesialisasie",
+    kind:"teach",
+    prov:"gp",
+    speed:"days",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Post Level 1 at an engineering school. You must read, speak, write and teach in both Afrikaans and English.",
+    who:"Complete CV, certified ID and qualifications, SACE certificate. All are mandatory.",
+    when:"Closes 16 October 2026",
+    email:"kantoor@htstuine.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-16"
+  },
+  {
+    title:"Grade R educator",
+    org:"Hannelie van Zyl pre-primary and nursery schools, Kuils River",
+    kind:"teach",
+    prov:"wc",
+    speed:"days",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Starts 1 November 2026. Afrikaans and English proficiency is an advantage.",
+    who:"BEd, SACE registration, experience teaching Grade R.",
+    when:"Closes 16 October 2026",
+    email:"Hannelie@neuro-edu-group.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-16"
+  },
+  {
+    title:"Afrikaans FAL teacher, immediate start",
+    org:"Maggie's Millennium Private School, Golfview, Mafikeng",
+    kind:"teach",
+    prov:"nw",
+    speed:"days",
+    stages:["teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Starts immediately. Drop off a full CV at the office, 21 Proctor Avenue, Golfview. Extra-murals are compulsory.",
+    who:"Fully qualified in Education, SACE certificate, prior teaching experience.",
+    when:"Closes 16 October 2026",
+    email:"",
+    phone:"",
+    url:"",
+    caution:"Applications are by hand delivery only. There is no email or phone number on the advert.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-16"
+  },
+  {
+    title:"Temporary departmental posts: Senior Phase and Intermediate Phase Mathematics",
+    org:"Dr. Izak van Niekerk Primere Skool, Springbok",
+    kind:"teach",
+    prov:"nc",
+    speed:"days",
+    ptype:"departmental",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Two posts for 1 January to 31 December 2027. Afrikaans medium. Address the application to the chairperson of the governing body.",
+    who:"Full degree and teaching qualification, SACE, computer literate, willing to do extra-murals. Certified matric, degree and teaching qualification with results, ID, SACE and police clearance.",
+    when:"Closes 16 October 2026 at 12:00",
+    email:"izakie1@lantic.net",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-16"
+  },
+  {
+    title:"Hockey outside coaches for 2027, girls and boys",
+    org:"Hoerskool Waterkloof, Pretoria",
+    kind:"coach",
+    prov:"gp",
+    speed:"days",
+    stages:["studying", "new", "teaching", "beyond"],
+    paths:["moving", "open"],
+    what:"Independent contractor coaching posts. Girls' hockey applications go to omari.geyer@klofies.co.za and boys' hockey to jeanie.pienaar@klofies.co.za. Send a full CV and a short motivation letter.",
+    who:"SAHA or FIH Level 2 coaching qualification is a strong recommendation, previous coaching experience, police clearance, bilingual is an advantage.",
+    when:"Closes Friday 16 October 2026 at 14:00",
+    email:"omari.geyer@klofies.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-16"
+  },
+  {
+    title:"Girls' rugby coach",
+    org:"Edgemead High School",
+    kind:"coach",
+    prov:"wc",
+    speed:"days",
+    stages:["new", "teaching", "beyond"],
+    paths:["moving", "open"],
+    what:"Leads the girls' rugby team from 1 November 2026. Send a short CV, coaching qualifications and a brief motivation to the Head of Girls' Rugby (or the Head of Rugby at sschultz@edgemeadhigh.org.za).",
+    who:"Matric, minimum Level 1 coaching qualification, at least five years of coaching experience, police and sexual offenders clearance, own transport. PDP is an advantage.",
+    when:"Closes 16 October 2026",
+    email:"aesterhuizen@edgemeadhigh.org.za",
+    phone:"",
+    url:"https://www.edgemeadhigh.org.za",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-16"
+  },
+  {
+    title:"Life Sciences Grades 8 to 12",
+    org:"St Andrew's School, Welkom",
+    kind:"teach",
+    prov:"fs",
+    speed:"days",
+    stages:["teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Starts 1 January 2027. IEB experience is an advantage. You need your own reliable vehicle. Address a letter to the principal with a concise CV and three referees.",
+    who:"Teaching qualification with Life Sciences as a major, SACE, FET Life Sciences experience, proficient in English, driver's licence.",
+    when:"Closes 18 October 2026",
+    email:"school@sasw.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-18"
+  },
+  {
+    title:"Afrikaans Home Language Grades 9 and 10, WCED contract for 2027",
+    org:"HS Emil Weder, Genadendal",
+    kind:"teach",
+    prov:"wc",
+    speed:"days",
+    ptype:"contract",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Contract from 1 January to 31 December 2027 in the Overberg, about 33 km from Caledon. Boarding is available at the school hostel. Active sport and culture involvement is required.",
+    who:"Appropriate qualifications and proven experience, certified matric and results, SACE, ID, CV with two referees, sexual offences clearance.",
+    when:"Closes Monday 19 October 2026 at 09:00",
+    email:"admin@emilweder.co.za",
+    phone:"",
+    url:"",
+    caution:"No feedback by 1 December 2026 means you were unsuccessful.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-19"
+  },
+  {
+    title:"Governing body posts for 2027: Foundation Phase, and Grades 4 to 7",
+    org:"Laerskool Mariepskop",
+    kind:"teach",
+    prov:"unk",
+    speed:"days",
+    ptype:"governing body",
+    stages:["new", "teaching"],
+    paths:["rooted", "open"],
+    what:"Two posts. Post 1 is Foundation Phase. Post 2 is Grades 4 to 7 in Afrikaans, Mathematics or Natural Sciences. Afrikaans is the language of teaching. Shortlisted candidates are invited from 19 October.",
+    who:"Teaching qualification, computer literate, sport and culture coaching, SACE, police clearance. Send a motivation letter, CV, matric certificate, qualifications and references.",
+    when:"Closes 19 October 2026 at 13:00",
+    email:"hoof@laerskoolmariepskop.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-19"
+  },
+  {
+    title:"Student assistant post for a male student",
+    org:"Lumiere Primary School, Vaalpark, Sasolburg",
+    kind:"start",
+    prov:"fs",
+    speed:"days",
+    stages:["studying"],
+    paths:["growing", "moving", "open"],
+    what:"Paid student post from 1 January 2027. You assist with the subjects you are studying and coach rugby, cricket and athletics. The advert specifically asks for a male student.",
+    who:"Matric certificate, proof of university registration, provisional SACE number, NRSO certificate, police clearance, driver's licence (PDP is an advantage).",
+    when:"Closes 20 October 2026",
+    email:"cv@lumies.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-20"
+  },
+  {
+    title:"Head of Department and lead teacher, pre-primary",
+    org:"Little Crosses Pre-Primary School, George",
+    kind:"teach",
+    prov:"wc",
+    speed:"days",
+    stages:["teaching"],
+    paths:["rooted", "growing", "open"],
+    what:"Leadership post from 1 January 2027 at a Christian pre-primary, including involvement in the aftercare programme. Send a letter, detailed CV, all qualifications and two references.",
+    who:"BEd Foundation Phase, SACE, at least five years of teaching with three or more in pre-school, excellent English.",
+    when:"Closes Friday 23 October 2026",
+    email:"finance@littlecrosses.org.za",
+    phone:"044 873 4063",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-23"
+  },
+  {
+    title:"Piano teacher, governing body post",
+    org:"Holy Cross Primary School, George",
+    kind:"teach",
+    prov:"wc",
+    speed:"days",
+    ptype:"governing body",
+    stages:["new", "teaching"],
+    paths:["rooted", "open"],
+    what:"Individual piano and theory to Grade 5, choirs, accompanying school events, class music, eisteddfod and exam preparation. Pay is market related. Starts 1 January 2027.",
+    who:"BMus Ed or a relevant tertiary music teaching qualification, SACE, police clearance, excellent piano and accompanying.",
+    when:"Closes Friday 23 October 2026 at 13:00",
+    email:"recruitment@holycrossgeorge.org.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-23"
+  },
+  {
+    title:"Permanent Grade 3 Foundation Phase teacher",
+    org:"Nouveau Kollege, Vredendal",
+    kind:"teach",
+    prov:"wc",
+    speed:"days",
+    ptype:"permanent",
+    stages:["new", "teaching"],
+    paths:["rooted", "open"],
+    what:"Christian, Afrikaans-medium independent school, starting 1 January 2027. Email a full CV in PDF with two references, ID, SACE and all qualifications, with the subject line AANSOEK GRAAD 3 POS.",
+    who:"Afrikaans-speaking, valid teaching qualification for Grade 3, CAPS experience at Grade 3, valid SACE, computer literate (Google Classroom, interactive whiteboards), sport coaching.",
+    when:"Closes Friday 23 October 2026",
+    email:"hoof@nkollege.co.za",
+    phone:"027 470 0117",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-23"
+  },
+  {
+    title:"Grade 1 teacher, Grade 3 teacher, and an assistant teacher post for students",
+    org:"Two Roads Private School",
+    kind:"teach",
+    prov:"unk",
+    speed:"days",
+    stages:["studying", "new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Three posts for 2027. The assistant teacher post is for someone currently studying towards a teaching qualification, with experience working with children.",
+    who:"Teachers: fully qualified, valid SACE number. All posts: fluent in Afrikaans and English, works well in a team.",
+    when:"Closes 23 October 2026",
+    email:"principal@tworoadsprivate.co.za",
+    phone:"",
+    url:"",
+    caution:"The advert does not give the town or province. Ask where the school is before you apply.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-23"
+  },
+  {
+    title:"Three governing body posts: LO Grades 10 to 12, EGD Grades 10 to 12, and Grades 4 to 7",
+    org:"Hoerskool Reitz",
+    kind:"teach",
+    prov:"fs",
+    speed:"days",
+    ptype:"governing body",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Life Orientation Grades 10 to 12, Engineering Graphics and Design Grades 10 to 12, and a temporary Grades 4 to 7 post covering Social Sciences, Creative Arts, Afrikaans and English. All start 1 January 2027. Send to BOTH email addresses: reitzhs@schoolink.co.za and francoisf@vkb.co.za.",
+    who:"Recognised teaching qualification in the subject, SACE registration. Certified qualifications, ID, application letter and testimonials.",
+    when:"Closes Monday 26 October 2026",
+    email:"reitzhs@schoolink.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-26"
+  },
+  {
+    title:"Grade 1 teacher, governing body post",
+    org:"Laerskool Hartswater",
+    kind:"teach",
+    prov:"nc",
+    speed:"days",
+    ptype:"governing body",
+    stages:["new", "teaching"],
+    paths:["rooted", "open"],
+    what:"Afrikaans-medium Grade 1 class from 1 January 2027, also teaching Afrikaans HL, English FAL, Mathematics and Life Skills. Send ONLY these, in this order: cover letter, CV with references, matric certificate, qualifications and SACE registration.",
+    who:"Qualified Foundation Phase teacher, strong discipline, available after hours and on weekends for school events.",
+    when:"Closes Friday 30 October 2026 at 13:00",
+    email:"lshwhoof@hartsies.co.za",
+    phone:"053 474 0251",
+    url:"",
+    caution:"The email starts with a lowercase L: lshwhoof@hartsies.co.za. No word by 2 November means you were unsuccessful.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-30"
+  },
+  {
+    title:"English Grades 4 to 7, Afrikaans Grades 4 to 7, and a Social Sciences post",
+    org:"Jabulani Primary School, Bethlehem",
+    kind:"teach",
+    prov:"fs",
+    speed:"days",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Three posts from January 2027. The third is listed on the advert as 'Social Sciences student', so ask the school whether it is open to students. Email, or hand deliver at 2 Cambridge Street, Bethlehem.",
+    who:"Teaching qualification relevant to the Intermediate Phase, valid SACE, updated CV, recent police clearance.",
+    when:"Closes 30 October 2026",
+    email:"Office_jabulani@yahoo.com",
+    phone:"066 250 1532",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-30"
+  },
+  {
+    title:"Departmental posts for 2027: Consumer Studies and Dramatic Arts, Grades 10 to 12",
+    org:"Hoerskool Victoria-Wes",
+    kind:"teach",
+    prov:"nc",
+    speed:"days",
+    ptype:"departmental",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Two contract posts for 1 January to 31 December 2027. A valid police clearance MUST be attached or the application will not be considered.",
+    who:"Recognised qualification for the subject and FET phase, SACE registered, Grade 10 to 12 experience preferred, CV with three referees.",
+    when:"Closes 30 October 2026",
+    email:"victoriaweshoer@gmail.com",
+    phone:"076 609 1910",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-30"
+  },
+  {
+    title:"Human Resources Manager, governing body post",
+    org:"Hoerskool Nylstroom, Modimolle",
+    kind:"dept",
+    prov:"lp",
+    speed:"days",
+    ptype:"support staff",
+    stages:["beyond", "new"],
+    paths:["rooted", "growing", "open"],
+    what:"A school HR role for 2027 covering contracts, appointments, leave, discipline, payroll and confidential records. Interviews are on 7 November. A route into a school for someone with education plus HR training.",
+    who:"Grade 12. A diploma or degree in HR, personnel or public management is a strong advantage. School experience is an advantage.",
+    when:"Closes 31 October 2026",
+    email:"kantoor@nylies.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-31"
+  },
+  {
+    title:"Grades 5 to 7 Mathematics teacher",
+    org:"Craiglands School",
+    kind:"teach",
+    prov:"unk",
+    speed:"days",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Starts January 2027. Remedial teaching experience is an advantage but not required.",
+    who:"BEd Intermediate Phase or PGCE, SACE, CAPS knowledge, experience teaching Mathematics.",
+    when:"Send your CV by 31 October 2026",
+    email:"info@craiglands.co.za",
+    phone:"",
+    url:"",
+    caution:"The advert does not say where the school is. Ask before you apply. You can also use grade6@craiglands.co.za.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-31"
+  },
+  {
+    title:"Two Intermediate Phase teachers",
+    org:"Olienhout Akademie, Dealesville",
+    kind:"teach",
+    prov:"fs",
+    speed:"days",
+    stages:["new", "teaching"],
+    paths:["rooted", "open"],
+    what:"Private Afrikaans-medium school, from 1 January 2027. Mathematics as a major counts in your favour but is not required.",
+    who:"BEd Intermediate Phase, SACE, police clearance, certified copies of everything.",
+    when:"Closes 31 October 2026",
+    email:"olienhoutskoolhoof@gmail.com",
+    phone:"076 777 2155",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-31"
+  },
+  {
+    title:"Foundation Phase Grades R to 3, housing available",
+    org:"Eland Skool, Andriesvale, Askham, Kalahari",
+    kind:"teach",
+    prov:"nc",
+    speed:"days",
+    stages:["new", "teaching"],
+    paths:["rooted", "moving", "open"],
+    what:"Teaching post for 2027 in the Kalahari. HOUSING IS AVAILABLE, which matters a lot for a rural post.",
+    who:"BEd Foundation Phase (compulsory), SACE, Foundation Phase experience, fluent Afrikaans, computer literate, willing to relocate.",
+    when:"Closes 31 October 2026",
+    email:"elandsanschool@gmail.com",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-31"
+  },
+  {
+    title:"EGD with Civil, Electrical or Mechanical specialisation, Grades 8 to 12",
+    org:"Beang tse Molemo Secondary School",
+    kind:"teach",
+    prov:"unk",
+    speed:"days",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Technical post starting January 2027. Apply by email to beangtsemolemoss@gmail.com or mogweralee@gmail.com.",
+    who:"Suitably qualified for EGD plus a civil, electrical or mechanical technology specialisation.",
+    when:"Closes 31 October 2026",
+    email:"beangtsemolemoss@gmail.com",
+    phone:"",
+    url:"",
+    caution:"The advert does not give the town or province. Ask where the school is before you apply.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-31"
+  },
+  {
+    title:"Grade R teacher or assistant",
+    org:"Kabouterland Kleuterskool, Reitz",
+    kind:"teach",
+    prov:"fs",
+    speed:"days",
+    stages:["studying", "new", "teaching"],
+    paths:["rooted", "open"],
+    what:"Afrikaans pre-primary post from 1 January 2027.",
+    who:"Excellent Afrikaans, appropriate post-school qualification, Foundation Phase experience. Include a first aid certificate, SACE, police clearance and references.",
+    when:"Closes 2 November 2026",
+    email:"kabouterland.reitz@gmail.com",
+    phone:"058 863 2644",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-02"
+  },
+  {
+    title:"Intermediate Phase Afrikaans language teacher",
+    org:"Victory Christian School, Jeffreys Bay",
+    kind:"teach",
+    prov:"ec",
+    speed:"days",
+    stages:["teaching"],
+    paths:["rooted", "open"],
+    what:"Starts Term 1 of 2027. Apply through the online form. The school may appoint before the closing date.",
+    who:"Active Christian with a pastor's reference, Intermediate Phase qualification and experience, Afrikaans HL and FAL, bilingual, able to coach sport, SACE.",
+    when:"Closes early November 2026",
+    email:"",
+    phone:"",
+    url:"https://forms.gle/gABM54C4ErdQ3sso8",
+    caution:"The advert says Friday 2 November, but 2 November 2026 is a Monday. Apply by Friday 30 October to be safe.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-30"
+  },
+  {
+    title:"Visual Arts, Design and Creative Arts teacher",
+    org:"False Bay High School, Strand",
+    kind:"teach",
+    prov:"wc",
+    speed:"days",
+    stages:["new", "teaching"],
+    paths:["rooted", "open"],
+    what:"Small private Christian school with 10 staff, small classes and no compulsory afternoon sport or culture. Starts January 2027. Mention any other subjects you can teach. Send a short CV.",
+    who:"Qualified to teach Visual Arts, Design or Creative Arts.",
+    when:"Applications must arrive before 5 November 2026",
+    email:"hoof@falsebayhigh.co.za",
+    phone:"",
+    url:"https://www.falsebayhigh.co.za",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-04"
+  },
+  {
+    title:"Life Skills, Life Orientation and Arts and Culture, governing body post",
+    org:"Laerskool Drakensig, Air Force Base Hoedspruit",
+    kind:"teach",
+    prov:"lp",
+    speed:"days",
+    ptype:"governing body",
+    stages:["teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Intermediate and Senior Phase post, teaching in English and Afrikaans. Sport coaching is required and a PDP counts in your favour.",
+    who:"Teaching experience, sport coaching. Complete CV, certified ID, qualifications and SACE, police clearance.",
+    when:"Closes 6 November 2026 at 12:00",
+    email:"hoof@drakensig.net",
+    phone:"015 793 1266",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-06"
+  },
+  {
+    title:"Senior Phase English Home Language, WCED contract",
+    org:"Hopolang Combined School, Khayelitsha",
+    kind:"teach",
+    prov:"wc",
+    speed:"formal",
+    ptype:"contract",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Contract from January to March 2027. A qualification in Senior Phase Mathematics or Natural Sciences is an added advantage.",
+    who:"At least REQV 13 with English Home Language as a teaching subject, CAPS trained, SACE registered or proof of application, computer literate.",
+    when:"Closes 15 November 2026 at 12:00",
+    email:"Hopolang.comb@wcgschools.gov.za",
+    phone:"021 361 9335",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-15"
+  },
+  {
+    title:"Athletics outside coaches for 2027",
+    org:"Laerskool Garsfontein, Pretoria",
+    kind:"coach",
+    prov:"gp",
+    speed:"formal",
+    stages:["studying", "new", "teaching", "beyond"],
+    paths:["moving", "open"],
+    what:"Discus, high jump, hurdles and shot put coaches. Experience counts in your favour.",
+    who:"Coaching qualifications or experience in the event, police clearance. SACE registration is an advantage.",
+    when:"Closes 30 November 2026",
+    email:"george@lsgf.co.za",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-30"
+  },
+  {
+    title:"Substitute post: Business Studies Grade 10, EMS Grades 8 and 9",
+    org:"Villiersdorp Secondary School",
+    kind:"teach",
+    prov:"wc",
+    speed:"days",
+    ptype:"substitute or relief",
+    stages:["new", "teaching"],
+    paths:["moving", "open"],
+    what:"Parallel medium (Afrikaans and English) substitute post from 27 October 2026 to 28 February 2027. Send your CV to the principal, Ms B Ockhuis.",
+    who:"Qualified for Business Studies and EMS.",
+    when:"Post runs 27 October 2026 to 28 February 2027",
+    email:"villiersec@hotmail.com",
+    phone:"",
+    url:"",
+    caution:"No closing date is given and the post starts on 27 October. Apply this week.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-26"
+  },
+  {
+    title:"Social Sciences, Creative Arts and LO; Foundation Phase Grade 2",
+    org:"Glenmark Christian School",
+    kind:"teach",
+    prov:"unk",
+    speed:"now",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Two posts: Social Science Grades 7 to 9 with Creative Arts Grades 7 to 9 and Life Orientation Grades 10 to 11; and Foundation Phase Grade 2. Immediate availability is required.",
+    who:"SACE registered, BEd, PGCE or equivalent.",
+    when:"Immediate start",
+    email:"principal@glenmarkchristianschool.co.za",
+    phone:"",
+    url:"",
+    caution:"No closing date or location is given. Ask where the school is before you apply.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-31"
+  },
+  {
+    title:"Technical educator, any Red Seal artisan",
+    org:"Kempton Panorama School",
+    kind:"teach",
+    prov:"gp",
+    speed:"formal",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"A route into teaching for qualified artisans. Willingness to help with extra-murals and sports coaching is expected.",
+    who:"Red Seal artisan in any trade, fully bilingual English and Afrikaans, SACE registration.",
+    when:"No closing date given",
+    email:"applications.kp@gmail.com",
+    phone:"011 976 2091",
+    url:"",
+    caution:"No closing date is given. Phone the school to check the post is still open.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-30"
+  },
+  {
+    title:"Nine teaching posts for 2027",
+    org:"Ashton John's Private School",
+    kind:"teach",
+    prov:"unk",
+    speed:"formal",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Primary Gr 1 to 3, Geography, Life Sciences, Physical Sciences, IT and CAT (all Gr 10 to 12), Mathematics and English (Gr 8 to 12), and Natural Sciences (Gr 8 to 9). The email subject line must be the position you are applying for.",
+    who:"Qualified for the subject and phase.",
+    when:"No closing date given",
+    email:"applications@ashtonjohnsschool.co.za",
+    phone:"",
+    url:"https://ashtonjohnsschool.co.za",
+    caution:"No closing date or location is given on the advert. Check the school website before you apply.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-30"
+  },
+  {
+    title:"EGD, Mathematics, Physical Sciences and English posts",
+    org:"Simond Private School, Paarl",
+    kind:"teach",
+    prov:"wc",
+    speed:"formal",
+    stages:["new", "teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Growth posts at a Christ-centred Grade R to 12 school: EGD, Mathematics and Physical Sciences Grades 10 to 12, and English HL and FAL Grades 8 to 12.",
+    who:"Qualified for the subject and phase.",
+    when:"No closing date given",
+    email:"",
+    phone:"",
+    url:"https://www.simond.co.za",
+    caution:"The application link was in a social media caption that did not come through. Apply through the school's website or ask the school for the link.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-30"
+  },
+  {
+    title:"Nucleus and aftercare teacher",
+    org:"Pikanini Sentrum, Frankfort",
+    kind:"teach",
+    prov:"fs",
+    speed:"formal",
+    stages:["new", "teaching"],
+    paths:["rooted", "open"],
+    what:"In-class nucleus teaching for Grades 4 to 9 and aftercare for Grades 6 to 9, from January 2027. Afrikaans advert.",
+    who:"A genuine love of children, hard-working, reliable and disciplined.",
+    when:"No closing date given",
+    email:"lilyhaarhoff@gmail.com",
+    phone:"079 897 9469",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-30"
+  },
+  {
+    title:"Grades 5 to 7 Mathematics teacher, small classes",
+    org:"The Tutor Hub, Somerset West",
+    kind:"teach",
+    prov:"wc",
+    speed:"formal",
+    stages:["teaching"],
+    paths:["rooted", "growing", "moving", "open"],
+    what:"Small independent CAPS primary with 5 to 10 learners per class. An academic post only, with no extra-curricular duties. Starts January 2027.",
+    who:"Recognised four-year teaching degree, SACE, at least two years of experience including Grades 5 to 7 Mathematics.",
+    when:"No closing date given",
+    email:"info@tutorhubwc.com",
+    phone:"",
+    url:"",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-30"
+  },
+  {
+    title:"Tutors: Maths, English, Science, EMS, Business Studies and Accounting",
+    org:"Talent Trek Holdings",
+    kind:"start",
+    prov:"unk",
+    speed:"always",
+    stages:["studying", "new", "teaching"],
+    paths:["growing", "moving", "open"],
+    what:"Tutoring Mathematics and Maths Literacy (Grades 4 to 11), English and Natural Sciences (Grades 4 to 9), EMS (Grades 7 to 9), and Business Studies and Accounting (Grades 10 to 11). Applications are online. Contact Refiloe on WhatsApp.",
+    who:"Grade 12, with or without formal qualifications. SACE registration and experience help but are not required. A real option for students.",
+    when:"Open, apply online",
+    email:"",
+    phone:"076 846 2351",
+    url:"https://sites.google.com/view/talenttrekholdings/home",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:""
+  },
+  {
+    title:"Specialist: Learning Interventions, 18-month contract",
+    org:"BANKSETA, Centurion head office",
+    kind:"dept",
+    prov:"gp",
+    speed:"days",
+    salary:"R760 000 per year (cost to company)",
+    stages:["teaching", "beyond"],
+    paths:["growing", "open"],
+    what:"Implements and manages learning programmes for the banking sector SETA, advises stakeholders, manages service providers and contracts. A well-paid route out of the classroom for experienced teachers interested in skills development and programme management. Cost to company is the total package, not take-home pay.",
+    who:"Bachelor's degree at NQF 7 or higher in Education, Business, Commerce, Social Science, Finance or a related field. Five years of experience in learning or skills development, including three in the public sector. Valid driver's licence.",
+    when:"Closes 16 October 2026",
+    email:"",
+    phone:"",
+    url:"https://bankseta.gosmarthr.co.za/recruits/jprofile.aspx?ID=250ab1ae-5181-42dc-8a0b-b4d400eb3e8c",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-10-16"
+  },
+  {
+    title:"24-month internship for Education or HR graduates, Parow",
+    org:"National Youth Development Agency (NYDA)",
+    kind:"start",
+    prov:"wc",
+    speed:"formal",
+    stages:["new"],
+    paths:["growing", "open"],
+    what:"A two-year internship based in Parow for young graduates. Send your CV by email.",
+    who:"A degree or diploma in Education, or in Human Resources Management and Administration.",
+    when:"No closing date given",
+    email:"xola.gxilishe@nyda.gov.za",
+    phone:"",
+    url:"",
+    caution:"This came from a forwarded WhatsApp message, not a formal advert. The email address is an official NYDA one, but ask for the full advert before you rely on it.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-09"
+  },
+  {
+    title:"School bookkeeper",
+    org:"Ridgewood Senior College",
+    kind:"dept",
+    prov:"unk",
+    speed:"formal",
+    ptype:"support staff",
+    stages:["beyond"],
+    paths:["rooted", "open"],
+    what:"Joins the finance department of an independent school for 2027, running the full debtors and creditors function.",
+    who:"Proven bookkeeping experience. School finance experience is an advantage. Contactable references.",
+    when:"No closing date given",
+    email:"director@ridgewoodcollege.co.za",
+    phone:"",
+    url:"",
+    caution:"No closing date or location is given. Ask before you apply.",
+    source:"Teaching posts channel",
+    seen:"2026-10-09",
+    expires:"2026-11-30"
+  },
+  {
+    title:"Substitute post: Natural Sciences Grade 8 to 9, Physical Sciences Grade 10 to 12",
+    org:"Bodweni Senior Secondary School", kind:"teach", prov:"unk", speed:"now",
+    stages:["new","teaching"], paths:["moving","rooted","open"],
+    what:"Substitute post covering two phases. Everything must go in ONE file: application letter, CV, certified ID, certified matric certificate, certified qualifications with transcript, and certified SACE certificate. The advert does not say which province the school is in, so ask when you phone.",
+    who:"Qualified educator for Natural Sciences and Physical Sciences.",
+    when:"Closes 7 September 2026 at 10:00",
+    email:"sjakada8@gmail.com", phone:"078 344 8796", url:"",
+    source:"Teaching posts channel", seen:"2026-09-06", expires:"2026-09-07"
+  },
+  {
+    title:"IT and CAT educator, departmental post",
+    org:"Hoerskool Drie Riviere, Vereeniging", kind:"teach", prov:"gp", speed:"days",
+    stages:["new","teaching"], paths:["rooted","growing","open"],
+    what:"Departmental post, meaning the province pays the salary and the normal state conditions apply. You must be able to program in Delphi and teach in both English and Afrikaans. Send a full CV, copies of qualifications, academic record and SACE certificate, or hand deliver at the school in Sabie Street, Three Rivers.",
+    who:"Relevant BEd or PGCE with IT specialisation, SACE registered, able to teach in English and Afrikaans, available for extra-curricular activities. Grade 12 experience is a benefit.",
+    when:"Closes Friday 11 September 2026",
+    email:"info@drieries.co.za", phone:"016 423 1590", url:"",
+    source:"Teaching posts channel", seen:"2026-09-06", expires:"2026-09-11"
+  },
+  {
+    title:"Mechanical Technology educator: welding and metalwork",
+    org:"Hoerskool Die Anker", kind:"teach", prov:"unk", speed:"days",
+    stages:["new","teaching"], paths:["rooted","growing","open"],
+    what:"Technical subject post for January 2027. Trade experience counts in your favour, and an artisan or technician qualification is preferred. You need to know the SBA and PAT assessment requirements for the subject. The advert is in Afrikaans and does not state the province.",
+    who:"A suitable teaching qualification with specialisation in Mechanical Technology, welding and metalwork. SACE registered. Industry experience counts in your favour.",
+    when:"Closes 18 September 2026, starts 1 January 2027",
+    email:"cvanrooyen@hsdieanker.co.za", phone:"", url:"",
+    source:"Teaching posts channel", seen:"2026-09-06", expires:"2026-09-18"
+  },
+  {
+    title:"FET educator: Afrikaans, Tourism and History",
+    org:"Cross Over School", kind:"teach", prov:"unk", speed:"days",
+    stages:["new","teaching"], paths:["rooted","growing","open"],
+    what:"Three FET subjects in one post. Put FET vacancy in the subject line of your email or it may not be read. The advert does not state the town or province, so ask before you commit to anything.",
+    who:"Fully qualified, SACE registered, comfortable in a school with a Christian ethos.",
+    when:"Closes 20 September 2026",
+    email:"careers@crossoverschool.co.za", phone:"", url:"",
+    source:"Teaching posts channel", seen:"2026-09-06", expires:"2026-09-20"
+  },
+  {
+    title:"Permanent posts: Natural Science, English, Social Sciences, Life Orientation",
+    org:"Astra Primary School", kind:"teach", prov:"unk", speed:"days",
+    stages:["new","teaching"], paths:["rooted","growing","open"],
+    what:"Four permanent subject posts open at the same time. You need a police clearance certificate ready, not just promised, so start that now if you do not have one. The advert does not state the town or province.",
+    who:"Teaching qualification certificate, SACE certificate, application letter, detailed CV and police clearance.",
+    when:"Closes 28 September 2026",
+    email:"astraprimary00@gmail.com", phone:"", url:"",
+    source:"Teaching posts channel", seen:"2026-09-06", expires:"2026-09-28"
+  },
+  {
+    title:"Mathematics Grade 10 to 12, school governing body post",
+    org:"Pongola Akademie, Pongola, northern KwaZulu-Natal", kind:"teach", prov:"kzn", speed:"formal",
+    stages:["new","teaching"], paths:["rooted","growing","open"],
+    what:"An SGB post, which means the school pays the salary out of its own funds rather than the province. Conditions and pay are set by the school, so ask about both before you accept. Afrikaans is the language of instruction. Say in your application which extra-curricular activities you can run, because the advert asks for it. Enquiries go to the principal, Mr P J Lombard.",
+    who:"Fully qualified, SACE registered, able to teach in Afrikaans.",
+    when:"Closes Monday 2 November 2026, starts January 2027",
+    email:"admin@npgakademie.co.za", phone:"034 413 1497", url:"",
+    source:"Teaching posts channel", seen:"2026-09-06", expires:"2026-11-02"
+  },
+  {
+    title:"Mathematics and Natural Sciences post in Rustenburg",
+    org:"School not named in the advert", kind:"teach", prov:"nw", speed:"days",
+    stages:["new","teaching"], paths:["moving","rooted","open"],
+    what:"Posted to a public Facebook group with no school name, no closing date and no phone number. The subjects and the town are real information, so we have kept it, but treat it carefully.",
+    who:"Mathematics and Natural Sciences educator.",
+    when:"No closing date given",
+    email:"600100137bss@gmail.com", phone:"", url:"",
+    caution:"No school is named on this post. Before you send anything, email and ask for the school name, the phone number and the closing date. If you do not get all three, leave it.",
+    source:"Facebook group, forwarded to the channel", seen:"2026-09-06", expires:"2026-10-06"
+  },
+  {
+    title:"Four educator posts: Accounting, Mathematics, English, Afrikaans",
+    org:"Orient Islamic School", kind:"teach", prov:"kzn", speed:"days",
+    stages:["new","teaching"], paths:["rooted","growing","moving","open"],
+    what:"Four separate posts open at once. Senior Accounting, Mathematics, English and Afrikaans. Send one CV and say clearly which post you are applying for.",
+    who:"Suitably qualified and experienced educators who meet the criteria in the advert.",
+    when:"Closes 11 September 2026",
+    email:"hr@orientschool.co.za", phone:"", url:"",
+    source:"Teaching posts channel", seen:"2026-09-04", expires:"2026-09-11"
+  },
+  {
+    title:"NSC exam invigilator for the 2026 final examinations",
+    org:"Rising Stars Academy, Table View, Cape Town", kind:"mark", prov:"wc", speed:"days",
+    stages:["studying","new","teaching"], paths:["moving","growing","open"],
+    what:"Invigilating the 2026 NSC final exams. You must be available for the whole examination period and must live in or near Table View. This is one of the assessment jobs that does not need years of Grade 12 teaching behind it.",
+    who:"Punctual, professional and trustworthy. Previous invigilation experience counts in your favour but is not required.",
+    when:"For the NSC exam period, October to December 2026",
+    email:"principal@risingstarsacademy.co.za", phone:"", url:"",
+    source:"Teaching posts channel", seen:"2026-09-04", expires:"2026-10-15"
+  },
+  {
+    title:"Teachers needed in Qatar, immediate start",
+    org:"Recruiter for a school in Doha, Qatar", kind:"work", prov:"int", speed:"now",
+    stages:["new","teaching"], paths:["moving","growing","open"],
+    what:"School term has already started and they need people who can move immediately. Applications from teachers currently in South Africa are welcomed.",
+    who:"A recognised university degree. Teaching experience preferred. You must be able to relocate to Doha almost at once.",
+    when:"Immediate, the school year has already begun",
+    email:"infanthead@amag.com.qa", phone:"", url:"",
+    source:"Teaching posts channel", seen:"2026-09-04", expires:"2026-09-14"
+  },
+  {
+    title:"Teaching and support vacancies across all schools",
+    org:"Curro Holdings", kind:"teach", prov:"nat", speed:"always",
+    stages:["new","teaching"], paths:["rooted","growing","moving","open"],
+    what:"Curro runs schools nationwide and recruits through one portal all year, including a graduate pipeline. Set up a profile once and you can apply for anything that opens.",
+    who:"Qualified educators and support staff. Do not apply for posts you are not qualified for. The portal blocks you for 30 days if you do.",
+    when:"Rolling, all year",
+    email:"", phone:"", url:"https://curro.myrecruit.co.za",
+    source:"Teaching posts channel", seen:"2026-09-04", expires:""
+  },
+  {
+    title:"Teacher recruitment agencies",
+    org:"Agencies placing teachers in independent and IEB schools", kind:"teach", prov:"nat", speed:"always",
+    stages:["new","teaching"], paths:["rooted","growing","moving","open"],
+    what:"Agencies are paid by schools to find teachers, so they cost you nothing. They handle most of the better-paying independent, IEB and Cambridge posts in Gauteng and the Cape, and salaries in these posts run well above state scales. Register once and they come back to you when something fits.",
+    who:"Fully qualified, SACE-registered teachers. Most agencies want at least one full academic year in a classroom.",
+    when:"All year. The big push for January starts runs from July to October.",
+    email:"", phone:"", url:"https://www.staffroom.co.za",
+    source:"Teaching posts channel", seen:"2026-09-04", expires:""
+  },
+
+  /* These four have passed their closing dates. They are kept here as a
+     record and the board hides them automatically. Delete them when you like. */
+  {
+    title:"Mathematics posts, Grades 8 to 12, several Gauteng schools",
+    org:"Staffroom recruitment", kind:"teach", prov:"gp", speed:"days",
+    stages:["new","teaching"], paths:["rooted","growing","moving","open"],
+    what:"Five separate maths posts at IEB, GDE, Cambridge and independent CAPS schools across Johannesburg and the West Rand, for a January 2027 start. Salary quoted at R25 000 to R45 000 a month depending on qualifications and experience.",
+    who:"Fully qualified maths teachers with at least one full academic year in a classroom and SACE registration.",
+    when:"Closed 30 August 2026",
+    email:"Alisonp@staffroom.co.za", phone:"", url:"",
+    source:"Teaching posts channel", seen:"2026-08-26", expires:"2026-08-30"
+  },
+  {
+    title:"Grade 7 teacher, permanent",
+    org:"King David Ariel Remedial Primary School, Linksfield", kind:"teach", prov:"gp", speed:"days",
+    stages:["new","teaching"], paths:["rooted","growing","open"],
+    what:"Permanent Senior Phase post at a remedial primary school, teaching all core and cultural subjects. Two referees required.",
+    who:"An education qualification, relevant teaching experience and SACE registration.",
+    when:"Closed 31 August 2026, effective January 2027",
+    email:"kdcareers@sabje.co.za", phone:"", url:"",
+    source:"Teaching posts channel", seen:"2026-08-26", expires:"2026-08-31"
+  },
+  {
+    title:"Computer Applications Technology and Life Orientation educator",
+    org:"Grabouw High School, Western Cape", kind:"teach", prov:"wc", speed:"days",
+    stages:["new","teaching"], paths:["rooted","moving","open"],
+    what:"Register teacher for Grade 10, teaching CAT to Grades 10 to 12 and Life Orientation to Grades 8 to 12.",
+    who:"Appropriate teaching qualification, SACE registration, clean police clearance. A driver's licence and public driving permit count in your favour.",
+    when:"Closed 31 August 2026, start 6 October 2026",
+    email:"sbl@hsgrabouw.co.za", phone:"", url:"",
+    source:"Teaching posts channel", seen:"2026-08-26", expires:"2026-08-31"
+  },
+  {
+    title:"Programme Officer, UNEVOC Centre",
+    org:"University of South Africa, Florida Campus", kind:"dept", prov:"gp", speed:"formal",
+    stages:["beyond"], paths:["growing","open"],
+    what:"Three-year fixed-term post in a university centre for technical and vocational education. The kind of role an education graduate moves into after some years, well away from a classroom.",
+    who:"Honours, BTech or postgraduate diploma in Education, Social Sciences, Development Studies, Engineering, Economics or Business Administration, plus six years' experience with three in management.",
+    when:"Closed 21 August 2026",
+    email:"", phone:"", url:"https://www.unisa.ac.za",
+    source:"Teaching posts channel", seen:"2026-08-20", expires:"2026-08-21"
+  },
+
+  /* ---- Permanent channels ---- */
+  {
+    title:"Your provincial educator database", org:"All nine provincial education departments",
+    kind:"db", prov:"nat", speed:"always",
+    stages:["studying","new","teaching","beyond"], paths:["rooted","growing","moving","open"],
+    what:"Every province keeps a list of educators available for work. Schools and districts pull names off this list when a post opens, including substitute and temporary posts that are never advertised.",
+    who:"Anyone with a teaching qualification, or in the final year of one.",
+    when:"Open all year. Update your details every few months so you stay active.",
+    url:"https://www.education.gov.za/AboutUs/ProvincialDepartments.aspx"
+  },
+  {
+    title:"National teaching vacancies", org:"Department of Basic Education",
+    kind:"teach", prov:"nat", speed:"formal",
+    stages:["new","teaching","beyond"], paths:["rooted","growing","moving","open"],
+    what:"The national department's vacancy page, plus its links to the National Recruitment Database and every provincial careers section.",
+    who:"Qualified, SACE-registered educators.", when:"Updated through the year.",
+    url:"https://www.education.gov.za/Vacancies.aspx"
+  },
+  {
+    title:"Public Service Vacancy Circular", org:"Department of Public Service and Administration",
+    kind:"dept", prov:"nat", speed:"formal",
+    stages:["new","teaching","beyond"], paths:["growing","moving","open"],
+    what:"A list published nearly every week of every open post in national and provincial government. This is where district office, subject adviser, curriculum, examinations and education-administration posts appear. You apply directly to the advertising department using a Z83 form.",
+    who:"Anyone meeting the stated requirements. Many posts want an education qualification but not classroom experience.",
+    when:"New circular most weeks except December. Closing dates two to four weeks after publication, then two to three months to appointment.",
+    url:"https://www.dpsa.gov.za/newsroom/psvc/"
+  },
+  {
+    title:"Register as an educator with SACE", org:"South African Council for Educators",
+    kind:"db", prov:"nat", speed:"always",
+    stages:["studying","new"], paths:["rooted","growing","moving","open"],
+    what:"By law you cannot be employed as a teacher in South Africa without SACE registration. Students can get provisional registration while still studying, which lets you take paid relief work. This is what makes you reachable for the urgent posts.",
+    who:"Anyone with, or busy with, a recognised teaching qualification.",
+    when:"Open all year. Allow several weeks. Do not wait for a job offer.",
+    url:"https://www.sace.org.za"
+  },
+
+  /* ---- Marking and assessment ---- */
+  {
+    title:"NSC marker, senior marker, chief marker or internal moderator",
+    org:"Your provincial education department", kind:"mark", prov:"nat", speed:"season",
+    stages:["teaching"], paths:["rooted","growing","moving","open"],
+    what:"Marking the Grade 12 national exams. Paid work over a few weeks in November and December, plus the June session. You move up the ladder: marker, senior marker, deputy chief marker, chief marker, internal moderator. Every province runs its own application system.",
+    who:"Educators currently teaching the subject at Grade 12 level. Provinces normally want recent Grade 12 experience in that exact subject. Principals, subject advisers for the subject, and anyone on leave during the session usually cannot apply.",
+    when:"Application windows open early in the year. The Western Cape ran 11 February to 6 March 2026. Check your own province in January.",
+    url:"https://exams.westerncape.gov.za/markers"
+  },
+  {
+    title:"Marking assistant, script capturer and invigilator",
+    org:"Provincial examinations directorates", kind:"mark", prov:"nat", speed:"season",
+    stages:["studying","new","teaching"], paths:["growing","moving","open"],
+    what:"The support jobs around the exams: checking totals, capturing marks, handling scripts, invigilating. These do not need years of Grade 12 experience, which makes them the realistic entry point for students and newly qualified teachers.",
+    who:"Varies. Many posts only need a relevant qualification or study in the subject area.",
+    when:"Recruited by district and provincial exam offices ahead of each exam session, usually with short notice.",
+    url:""
+  },
+  {
+    title:"National examiner and internal moderator",
+    org:"Department of Basic Education", kind:"mark", prov:"nat", speed:"season",
+    stages:["teaching","beyond"], paths:["growing","open"],
+    what:"Setting the national question papers, finalising marking guidelines, training chief markers and writing the diagnostic report for a subject. Advertised as part-time contract posts.",
+    who:"Typically a degree or national diploma with the subject at second-year level, and at least five years teaching the subject at Grade 12 level, with recent experience.",
+    when:"Advertised by the DBE, usually once a year.",
+    url:"https://www.education.gov.za/Vacancies.aspx"
+  },
+  {
+    title:"External moderator", org:"Umalusi",
+    kind:"mark", prov:"nat", speed:"season",
+    stages:["teaching","beyond"], paths:["growing","open"],
+    what:"Umalusi is the council that quality assures every school-leaving qualification in the country. External moderators check question papers, school-based assessment, practical tasks and the marking itself across all the assessment bodies, and write the reports. This is the top of the assessment ladder.",
+    who:"A four-year post-matric qualification including the subject at third-year or honours level, and about five years of national marking experience, usually as senior marker, deputy chief marker, chief marker or internal moderator.",
+    when:"Advertised in rounds through the year. Applications go through the Umalusi recruitment system.",
+    url:"https://www.umalusi-online.org.za/erecruitment.v2/"
+  },
+  {
+    title:"Umalusi staff and specialist posts", org:"Umalusi",
+    kind:"dept", prov:"nat", speed:"formal",
+    stages:["teaching","beyond"], paths:["growing","open"],
+    what:"Permanent and contract posts inside Umalusi itself, covering evaluation and monitoring, qualifications, research and quality assurance management. Good landing place for teachers with assessment experience who want out of the classroom.",
+    who:"Education qualifications plus assessment or curriculum experience.",
+    when:"Advertised through the year.",
+    url:"https://www.umalusi.org.za"
+  },
+  {
+    title:"Marking for private assessment bodies", org:"IEB, SACAI and independent schools",
+    kind:"mark", prov:"nat", speed:"season",
+    stages:["teaching"], paths:["growing","moving","open"],
+    what:"The independent examination bodies run their own marking, moderation and paper-setting panels, separate from the state system. They recruit through the schools that write their exams, so ask an IEB school directly rather than waiting for an advert.",
+    who:"Teachers with experience of that specific curriculum.",
+    when:"Recruited ahead of each exam session.",
+    url:""
+  },
+
+  /* ---- Getting started ---- */
+  {
+    title:"Tutoring at your own university", org:"Most South African universities",
+    kind:"start", prov:"nat", speed:"season",
+    stages:["studying"], paths:["growing","moving","open"],
+    what:"If you did well in a module, you can usually be paid to tutor it the next year. Universities also hire student assistants, mentors, demonstrators and marking assistants. Real teaching experience, and it goes on your CV.",
+    who:"Registered students, usually with 65% or more in the module.",
+    when:"Recruitment at the start of each semester. Ask your faculty or module lecturer directly.",
+    url:""
+  },
+  {
+    title:"ETDP SETA opportunities", org:"Education, Training and Development Practices SETA",
+    kind:"start", prov:"nat", speed:"season",
+    stages:["studying","new"], paths:["growing","moving","open"],
+    what:"Bursaries, learnerships, internships and work-based learning stipends in the education sector. One of the few places a student teacher can get paid while doing teaching practice.",
+    who:"Students and graduates in education and training fields.",
+    when:"Opens in windows through the year. Check often.",
+    url:"https://www.etdpseta.org.za"
+  },
+  {
+    title:"Private tutoring and holiday schools", org:"Tutoring companies and NGOs",
+    kind:"start", prov:"nat", speed:"always",
+    stages:["studying","new","teaching"], paths:["growing","moving","open"],
+    what:"Paid one-on-one and small-group tutoring, plus the winter and spring schools that run before the Grade 12 exams. Flexible, and you can do it while studying or teaching.",
+    who:"Anyone who knows the subject well. Most companies test you before they place you.",
+    when:"All year, busiest before June and November exams.",
+    url:""
+  },
+  {
+    title:"Substitute and relief teaching", org:"Individual schools",
+    kind:"teach", prov:"nat", speed:"always",
+    stages:["studying","new","teaching"], paths:["moving","open"],
+    what:"Schools need cover for maternity, sick and study leave. Filled in a day by phoning the school directly, and almost never advertised. This is the same pipeline the Needed now board pulls from.",
+    who:"SACE-registered or provisionally registered educators.",
+    when:"All year, at short notice. Make contact in January and July.",
+    url:""
+  },
+  {
+    title:"Independent and private schools", org:"ISASA and independent school groups",
+    kind:"teach", prov:"nat", speed:"formal",
+    stages:["new","teaching"], paths:["rooted","growing","moving","open"],
+    what:"Private and independent schools advertise on their own websites and do not use provincial systems. They often move faster than government and sometimes pay more, but conditions vary a lot.",
+    who:"Qualified, SACE-registered educators. Some want specific curricula such as IEB or Cambridge.",
+    when:"Heaviest advertising August to October for the following January.",
+    url:"https://www.isasa.org"
+  },
+  {
+    title:"Teaching abroad", org:"International schools and ministries of education",
+    kind:"work", prov:"int", speed:"always",
+    stages:["new","teaching"], paths:["moving","growing","open"],
+    what:"South African teachers are recruited into the Gulf states, East and South East Asia, the United Kingdom and international schools across Africa, mostly for English, Mathematics and Sciences. Your documents matter more than your interview.",
+    who:"Qualified teachers, usually with two years' experience. Some markets want a degree plus a PGCE specifically.",
+    when:"All year, with a rush January to April for August starts.",
+    url:""
+  },
+
+  /* ---- Money ---- */
+  {
+    title:"Funza Lushaka Bursary", org:"Department of Basic Education",
+    kind:"money", prov:"nat", speed:"season",
+    stages:["school","studying"], paths:["rooted","growing","moving","open"],
+    what:"A full bursary covering tuition, accommodation, books, meals and a small allowance, for students doing a BEd or PGCE in priority subjects such as Mathematics, Sciences, Technology and African languages. In return you teach at a public school for the same number of years it funded you.",
+    who:"South African citizens accepted at a public university, usually 30 or younger, with at least 50% in the subjects you want to teach.",
+    when:"Usually opens in October and closes late January. Apply through the e-Gov portal.",
+    url:"https://www.eservices.gov.za"
+  },
+  {
+    title:"NSFAS student funding", org:"National Student Financial Aid Scheme",
+    kind:"money", prov:"nat", speed:"season",
+    stages:["school","studying"], paths:["rooted","growing","moving","open"],
+    what:"Government funding for undergraduate study at public universities and TVET colleges, including education degrees. Covers tuition, accommodation and allowances for students from lower-income households.",
+    who:"South African citizens whose household income falls under the published threshold.",
+    when:"Applications for 2027 are open and close 31 October 2026. Apply at nsfas.org.za or on the NSFAS app. It is free: never pay anyone or share your password or OTP.",
+    url:"https://www.nsfas.org.za"
+  },
+  {
+    title:"NRF postgraduate funding", org:"National Research Foundation",
+    kind:"money", prov:"nat", speed:"season",
+    stages:["studying","new","teaching"], paths:["growing","open"],
+    what:"Scholarships for Honours, master's and doctoral study at South African universities, including education research. Applications run through NRF Connect and are usually endorsed by your university.",
+    who:"Students accepted, or applying, for postgraduate study.",
+    when:"Honours and master's calls generally open mid-year for the following year. Deadlines are strict.",
+    url:"https://www.nrf.ac.za"
+  },
+
+  /* ---- Study further ---- */
+  {
+    title:"Mandela Rhodes Scholarship", org:"The Mandela Rhodes Foundation",
+    kind:"study", prov:"nat", speed:"season",
+    stages:["studying","new","teaching"], paths:["growing","open"],
+    what:"Full postgraduate funding at a South African university plus a leadership development programme. Education students are eligible and under-represented in the applicant pool.",
+    who:"African citizens under 30 with a strong academic record and a leadership track record.",
+    when:"Usually opens in the first half of the year for study the following year.",
+    url:"https://www.mandelarhodes.org"
+  },
+  {
+    title:"Canon Collins Scholarships", org:"Canon Collins Trust",
+    kind:"study", prov:"nat", speed:"season",
+    stages:["new","teaching","beyond"], paths:["growing","open"],
+    what:"Postgraduate scholarships for Southern Africans studying in South Africa or the United Kingdom, with a strong social justice focus. Education is a funded field.",
+    who:"Citizens of Southern African countries with a social justice record.",
+    when:"Different deadlines for different awards. Check early in the year.",
+    url:"https://canoncollins.org"
+  },
+  {
+    title:"Chevening Scholarships", org:"UK Government",
+    kind:"study", prov:"int", speed:"season",
+    stages:["new","teaching","beyond"], paths:["growing","moving","open"],
+    what:"Fully funded one-year master's study in the United Kingdom, including education, education policy and leadership. Covers tuition, flights and living costs.",
+    who:"Usually two years of work experience, a first degree, and a plan to return home afterwards.",
+    when:"Opens around August, closes early November.",
+    url:"https://www.chevening.org"
+  },
+  {
+    title:"DAAD scholarships (Germany)", org:"German Academic Exchange Service",
+    kind:"study", prov:"int", speed:"season",
+    stages:["new","teaching","beyond"], paths:["growing","moving","open"],
+    what:"Funding for master's and doctoral study in Germany, including education and development studies. Many programmes are taught in English.",
+    who:"Graduates, usually with some work experience for development-related courses.",
+    when:"Varies by programme, often around the middle of the year.",
+    url:"https://www.daad.de"
+  },
+  {
+    title:"Mastercard Foundation Scholars Program", org:"Mastercard Foundation and partner universities",
+    kind:"study", prov:"nat", speed:"season",
+    stages:["school","studying","new"], paths:["growing","open"],
+    what:"Comprehensive scholarships at partner universities in Africa and abroad, covering fees, accommodation, materials and a stipend, with leadership and mentorship built in.",
+    who:"Academically strong young Africans with financial need and a record of giving back.",
+    when:"Deadlines set by each partner university.",
+    url:"https://mastercardfdn.org"
+  }
+];
+
+const ROUTE_BECOME = [
+  {h:"Pass matric with the right subjects", p:"You need a National Senior Certificate with a bachelor's pass for a BEd. To teach Mathematics or Physical Sciences you must have passed those yourself, usually at 50% or higher. If you did Mathematical Literacy you can still teach many other subjects: languages, Life Orientation, History, Business Studies, Accounting and more."},
+  {h:"Choose your route", p:"Two roads. <strong>Road one:</strong> a four-year Bachelor of Education straight after matric. <strong>Road two:</strong> any three-year degree first, then a one-year Postgraduate Certificate in Education. Both end in the same place. Road two suits you if you already have a degree or are not sure yet."},
+  {h:"Choose your phase and your subjects", p:"Foundation Phase is Grade R to 3, Intermediate is 4 to 6, Senior is 7 to 9, FET is 10 to 12. You usually pick two teaching subjects. Choose at least one scarce subject: Mathematics, Physical Sciences, Accounting, Technology or an African language, because that is what gets you hired first, and what gets you onto marking panels later."},
+  {h:"Apply to a university and apply for money at the same time", p:"University applications generally open in April and close between June and September for the following year. Do not wait for your acceptance letter before applying for funding. Apply for Funza Lushaka and NSFAS in the same season."},
+  {h:"Do your teaching practice properly", p:"Every education qualification includes weeks of supervised teaching in real schools. Treat it as a long job interview. Many first posts come from the practical school. Keep every lesson plan, assessment and signed evaluation form. That becomes your portfolio of evidence."},
+  {h:"Register with SACE", p:"You cannot be legally employed as a teacher without it. Apply for provisional registration while you are still a student so you can take paid relief work, then convert to full registration when you graduate."},
+  {h:"Get onto the databases, then work the phone", p:"Register on your provincial database and on any other province you would move to. Apply for advertised posts, check the DPSA circular for office posts, and phone schools directly about relief. The fastest jobs in this country are never advertised."}
+];
+
+const ROUTE_MARK = [
+  {h:"Teach the subject at the right grade first", p:"Almost every marking post requires you to be currently teaching that exact subject, and most provinces want Grade 12 experience in it. If you are not there yet, start with the support roles below: marking assistant, script capturer and invigilator, which do not have that requirement."},
+  {h:"Apply as a marker early in the year", p:"This catches people out. The exams are in November, but the applications open in February and March, months before. Watch your provincial exams directorate from January. Miss the window and you wait a full year."},
+  {h:"Do one session well, then move up", p:"The ladder is marker, senior marker, deputy chief marker, chief marker, internal moderator. Each step is decided on your record from the last session, so reliability and accuracy matter more than seniority at your school."},
+  {h:"Move into setting papers", p:"Once you have marking experience, the DBE recruits examiners and internal moderators to set the national question papers, finalise marking guidelines and train chief markers. This is where teaching turns into national assessment work."},
+  {h:"Then Umalusi, or the department", p:"With roughly five years of national marking behind you and a subject qualification at third-year or honours level, you can apply as an Umalusi external moderator. From there the doors are curriculum, examinations, quality assurance and district office work."}
+];
+
+const ROUTE_STUDY = [
+  {h:"Honours or a Postgraduate Diploma", p:"One year full time, two part time. This is the gate to everything after it. Education Honours specialisations include curriculum studies, educational psychology, education management, inclusive education and subject didactics. Apply about a year ahead, and apply for funding at the same time."},
+  {h:"Master's", p:"One to two years. Either coursework with a mini-dissertation, or full research. Many teachers do this part time while teaching. A master's is the usual minimum for lecturing, for senior department posts, and for curriculum and assessment work."},
+  {h:"PhD", p:"Three years or more of original research. Many funded doctoral students pay no fees, and universities want more education doctorates than they can find. This is the door to full academic posts."},
+  {h:"Postdoctoral fellowship", p:"After the PhD, a one to three year paid research position. South African postdocs are often tax-free, and there are fellowships across Africa, Europe, North America and Asia."},
+  {h:"Study abroad at any of these stages", p:"You do not have to do all your degrees in one country. Chevening, DAAD, Erasmus Mundus, Fulbright, Commonwealth, Mandela Rhodes and Canon Collins all fund Southern Africans. Deadlines fall eight to fourteen months before the course starts, so work backwards from the date you want to begin."}
+];
+
+const ROUTE_ABROAD = [
+  {h:"Get your SACE certificate and keep it current", p:"Almost every foreign employer and immigration department asks for proof that you are a registered teacher at home. Order a printed certificate and keep a good scan."},
+  {h:"Get a police clearance certificate", p:"Apply through the South African Police Service. It takes several weeks. Most countries will not process a work visa without one issued in the last six months."},
+  {h:"Get your qualifications verified and legalised", p:"Usually certified copies, then authentication or an apostille through the Department of International Relations and Cooperation, and sometimes an evaluation by the receiving country. Start before you apply, not after you are offered a job."},
+  {h:"Decide which market fits you", p:"The Gulf states and East Asia pay well and often include housing and flights, but contracts are strict. The United Kingdom needs Mathematics, Sciences and languages and has a clear visa route. International schools across Africa pay less but are closer to home. Read the contract, not the brochure."},
+  {h:"Apply directly where you can", p:"Many international schools advertise on their own websites and hire directly. Where you use a recruiter, check the employer pays them, not you. Ask to speak to a South African teacher already at the school before you sign."},
+  {h:"Plan your return", p:"If you want to come back into a South African public school later, stay on your provincial database and keep your SACE registration paid while you are away."}
+];
+
+const GUIDES = [
+  {t:"Answer an urgent WhatsApp post without losing the job",
+   steps:["Have one folder on your phone, ready before you need it: ID, SACE certificate or proof of application, qualification, academic record, one-page CV as a PDF, and three referees with numbers.",
+     "Phone the number. Do not WhatsApp and do not email. These posts are filled by whoever calls first and sounds ready.",
+     "Say four things in the first fifteen seconds: your name, your subject and phase, your SACE status, and when you can start.",
+     "Ask two questions: is it temporary or permanent, and who do I report to on the first day.",
+     "Send your documents in one message immediately after the call, as a single PDF where possible.",
+     "Follow up once the next morning if you have not heard. Once, not three times."],
+   warn:"Check the post is real before you travel. Search the school name, phone the school's own landline, and never pay anyone a cent to be considered. No legitimate South African school charges a teacher to apply."},
+  {t:"Tell the three kinds of school post apart before you apply",
+   steps:["Read the advert for the words departmental, SGB, SBL, governing body, or substitute. That one word changes everything about the job.",
+     "A DEPARTMENTAL post is paid by the province on state salary scales, with state benefits, pension and job security. These are advertised in the provincial vacancy bulletin and go through the full formal process.",
+     "An SGB or SBL post is paid by the school itself out of school fees. The school governing body decides the salary and the conditions, so both vary enormously. Some pay better than the state, many pay less, and the security is weaker.",
+     "A SUBSTITUTE or relief post covers someone who is away. It is short, it is filled fast, and it is the most common way new teachers get their first paid classroom time.",
+     "For an SGB post, ask three questions before you accept: what is the monthly salary, is there a pension or medical contribution, and what happens to the post if the school fee income drops.",
+     "For a departmental post, expect two to three months from advert to appointment. Do not stop applying elsewhere while you wait."],
+   warn:"An SGB post still counts as real teaching experience and still needs SACE registration. It is not a lesser job, it is a differently funded one. Just go in knowing which you are signing."},
+  {t:"Apply for a provincial teaching post online",
+   steps:["Go to your province's education department site (see the Provinces tab) and find the vacancy list or bulletin.",
+     "Create a profile on the recruitment system. Use an email address you will still have in two years.",
+     "Load your personal details, qualifications and SACE number once. The system keeps them for future applications.",
+     "Upload certified copies of your ID, qualifications, academic record and SACE certificate. Scans must be clear and the right file type.",
+     "Find the post and note its reference number exactly. One wrong digit and your application is thrown out.",
+     "Complete every section. Blank fields are treated as incomplete applications.",
+     "Submit before the closing date. Late applications are never considered.",
+     "Save your confirmation and check the portal weekly. Expect two to three months from advert to appointment."],
+   warn:"Some provinces, such as the Western Cape, only accept online applications. Emailed, faxed and hand-delivered applications are thrown away without being read."},
+  {t:"Apply to mark the Grade 12 exams",
+   steps:["From January, watch your provincial education department and its examinations directorate for the marker application notice. The window is usually four to six weeks around February and March.",
+     "Check you qualify: you normally must be currently teaching that subject, with recent Grade 12 experience in it.",
+     "Register on your province's online marker system. Some provinces still run a paper form through the district office as well. Do both if both are offered.",
+     "Complete a separate application for each subject and paper you want to mark.",
+     "Get your application verified by your principal or subject adviser where the form requires it. Unverified forms are rejected.",
+     "Attach certified copies of your qualifications.",
+     "Submit before the closing date, through the exact channel named. No faxes, no late forms, no exceptions.",
+     "If selected, expect a competency check and training before the session."],
+   warn:"You usually cannot apply if you are a principal, if you are the subject adviser for that subject, if you will be on leave during the session, or if you have a child writing that subject that year. Declare it. Being caught hiding it disqualifies you permanently."},
+  {t:"Fill in the Z83 form for a department or office post",
+   steps:["Download the current Z83 from the DPSA site or the advertising department. Old versions are rejected.",
+     "Read the advert twice and write down the reference number, the closing date and the exact submission method.",
+     "Complete every section in full. Do not write 'see CV', because that alone disqualifies you.",
+     "Sign and date it. An unsigned Z83 is invalid.",
+     "Attach a detailed CV. Only attach certified qualification copies if the advert asks at this stage. Many now only ask shortlisted candidates.",
+     "Submit exactly as instructed: portal, email, post or hand delivery. Mixing methods disqualifies you.",
+     "Keep a dated copy of everything you sent."],
+   warn:"For senior management posts you also need a Nyukela pre-entry certificate from the National School of Government before you can be appointed."},
+  {t:"Get onto a school's substitute list",
+   steps:["List ten schools you could reach easily and would be happy to work at.",
+     "Prepare a one-page CV, proof of SACE registration or application, and your ID.",
+     "Phone each school and ask for the principal or the deputy who handles staffing. Ask one question: do you keep a list of relief teachers?",
+     "Deliver your documents in person where you can. Being a face and not an email is the whole point.",
+     "Follow up once a term, briefly. Availability changes constantly.",
+     "Say yes to short work. A three-day booking is how most permanent posts start."],
+   warn:""},
+  {t:"Apply for the Funza Lushaka bursary",
+   steps:["Check you qualify: South African citizen, accepted or applying for a BEd or PGCE at a public university, specialising in priority subjects.",
+     "Get documents ready first: ID, latest results, proof of university application or registration, household income proof.",
+     "Register on the e-Gov portal at eservices.gov.za and verify your account.",
+     "Complete the application, choosing your qualification and priority subjects carefully.",
+     "Upload clear, certified scans. Blurry documents are the commonest reason for rejection.",
+     "Submit and record your reference number.",
+     "Check your status on the portal, and watch your email and phone. Offers sometimes carry a short deadline to accept."],
+   warn:"The bursary carries a service obligation: you teach at a public school for the same number of years it funded you, wherever the department places you. Read that before you accept."},
+  {t:"Apply for postgraduate funding",
+   steps:["Work backwards from when you want to start. Most funders close eight to twelve months before the course begins.",
+     "Get your university acceptance, or at least a supervisor's letter of support, as early as you can.",
+     "Write a clear research proposal: the problem, why it matters in South African schools, how you will study it, what will change because of it.",
+     "Ask two referees early and give them your CV, your proposal and the deadline.",
+     "Apply to more than one funder in the same season. Applying to only one is the commonest mistake.",
+     "Keep every reference number and confirmation email in one folder."],
+   warn:""},
+  {t:"Build a teacher CV that actually gets read",
+   steps:["Two pages. Panels read dozens in one sitting.",
+     "Top of page one: name, phone, email, SACE number, the phases you teach and your teaching subjects.",
+     "Qualifications with institution and year, most recent first.",
+     "For each teaching experience, give the school, the grades, the subjects and the class sizes. Numbers convince more than adjectives.",
+     "One short section on results: what you improved, and by how much.",
+     "List marking, moderation, extra-murals and committees. Schools hire people who will run the debating team.",
+     "Three referees with positions and current phone numbers, and ask them first.",
+     "Save as PDF, named with your own name, not 'CV final final'."],
+   warn:""},
+  {t:"Prepare documents for working abroad",
+   steps:["Order your SACE certificate and confirm your registration is paid up.",
+     "Apply for a police clearance certificate through SAPS, and allow six to eight weeks.",
+     "Get certified copies of your degree, transcript and ID.",
+     "Have your qualifications authenticated or apostilled through DIRCO. Ask the destination country which one they need, because it differs.",
+     "Get a medical certificate if the country requires one.",
+     "Scan everything at high quality into one cloud folder you can send from your phone.",
+     "Only then start applying. Employers move fast and the person with ready documents wins."],
+   warn:"Never hand original documents to a recruiter, and never pay a placement fee before you have a signed contract."}
+];
+
+/* ==========================================================================
+   2. MACHINERY
+   ========================================================================== */
+const state = {stage:null, path:"open", kind:"all", prov:"all", speed:"all", q:""};
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const today = new Date(); today.setHours(0,0,0,0);
+const isLive = o => !o.expires || new Date(o.expires + "T23:59:59") >= today;
+const fmt = d => d ? new Date(d + "T00:00:00").toLocaleDateString("en-ZA",{day:"numeric",month:"short"}) : "";
+const daysLeft = d => Math.round((new Date(d + "T00:00:00") - today) / 86400000);
+
+$("#stampTop").textContent = "South Africa · " + today.toLocaleDateString("en-ZA",{day:"numeric",month:"long",year:"numeric"});
+
+function buildChips(el, items, key){
+  el.innerHTML = items.map(i => `<button class="chip" data-v="${i.id}" aria-pressed="${state[key]===i.id}">${esc(i.label)}</button>`).join("");
+  el.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
+    state[key] = (state[key] === b.dataset.v && key === "stage") ? null : b.dataset.v;
+    buildChips(el, items, key); renderNote(); renderUrgent(); renderCards();
+  }));
+}
+
+function renderNote(){
+  const p = PATHS.find(x => x.id === state.path) || PATHS[3];
+  const s = STAGES.find(x => x.id === state.stage);
+  $("#note").innerHTML = `<h3>${esc(s ? s.label + " · " + p.label : p.label)}</h3>
+    <p>${esc(p.line)}</p><ol class="steps">${p.steps.map(x => `<li>${esc(x)}</li>`).join("")}</ol>`;
+}
+
+/* ---- urgent board ---- */
+function renderUrgent(){
+  const live = DATA.filter(o => (o.speed === "now" || o.speed === "days") && isLive(o))
+    .filter(o => !state.stage || o.stages.includes(state.stage))
+    .sort((a,b) => (a.expires||"9999").localeCompare(b.expires||"9999"));
+
+  const gone = DATA.filter(o => o.expires && !isLive(o)).length;
+  $("#urgentStamp").textContent =
+    (live.length ? live.length + (live.length === 1 ? " open post" : " open posts") : "") +
+    (gone ? (live.length ? " · " : "") + gone + " closed and removed" : "");
+
+  if(!live.length){
+    $("#urgentCards").innerHTML = `<div class="empty" style="grid-column:1/-1">
+      <h3>Nothing urgent on the board right now</h3>
+      <p>This board carries short-notice posts from the teacher WhatsApp channels, the ones where a school needs somebody by Monday. It is empty either because none have come in, or because the last batch has passed its take-down date.</p>
+      <p>Two things worth doing while it is quiet: get your documents into one folder on your phone, and read <strong>Answer an urgent WhatsApp post without losing the job</strong> under How to apply. When one lands you will have about two hours, not two days.</p></div>`;
+    return;
+  }
+
+  $("#urgentCards").innerHTML = live.map(o => {
+    const d = o.expires ? daysLeft(o.expires) : null;
+    const urgent = o.speed === "now";
+    const pv = PROVINCES.find(x => x.id === o.prov);
+    const left = d === null ? "" : d <= 0 ? "Last day" : d === 1 ? "1 day left" : d + " days left";
+    return `<article class="ucard ${urgent ? "" : "days"}">
+      <span class="tag ${urgent ? "t-work" : "t-money"}">${urgent ? "Phone today" : "Closing soon"}</span>
+      ${left ? `<span class="tag t-time">${esc(left)}</span>` : ""}${o.salary ? `<span class="tag t-pay">${esc(o.salary)}</span>` : ""}${o.ptype ? `<span class="tag t-type">${esc(o.ptype)}</span>` : ""}
+      <h3>${esc(o.title)}</h3>
+      <div class="org">${esc(o.org)}</div>
+      <p>${esc(o.what)}</p>
+      <div class="meta"><strong>Who:</strong> ${esc(o.who)}${o.when ? `<br><strong>When:</strong> ${esc(o.when)}` : ""}</div>
+      ${contactHTML(o, "callbtn")}
+      ${o.caution ? `<div class="warn" style="margin-top:10px">${esc(o.caution)}</div>` : ""}
+      <div class="prov-line">${pv ? esc(pv.label) : ""}</div>
+      <div class="src">Seen ${esc(fmt(o.seen)) || "recently"}${o.source ? " · " + esc(o.source) : ""} · we have not verified this with the school. Check before you travel.</div>
+    </article>`;
+  }).join("");
+}
+
+/* ---- contact line: the number or address is always visible as text, with a Copy button.
+   Phone and email links do not open for every viewer, so the text itself is the contact. ---- */
+function contactHTML(o, cls){
+  const copy = v => `<button class="copybtn" type="button" data-copy="${esc(v)}">Copy</button>`;
+  const parts = [];
+  if(o.phone) parts.push(`<a class="${cls}" href="tel:${esc(o.phone.replace(/\s/g,""))}">Call ${esc(o.phone)}</a>${copy(o.phone)}`);
+  else if(o.email) parts.push(`<a class="${cls}" href="mailto:${esc(o.email)}">${cls==="go"?"Send your CV to ":"Email "}${esc(o.email)}</a>${copy(o.email)}`);
+  if(o.url) parts.push(`<a class="${cls}" href="${esc(o.url)}" target="_blank" rel="noopener">${o.phone||o.email?"Open the advert":"Open the official page"}</a>`);
+  if(!parts.length) return cls==="go" ? `<span class="go" style="color:var(--muted);border:none">Contact the school or office directly</span>` : "";
+  return `<div class="contact">${parts.join("")}</div>`;
+}
+document.addEventListener("click", async e => {
+  const b = e.target.closest(".copybtn"); if(!b) return;
+  try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = "Copied"; }
+  catch { b.textContent = b.dataset.copy; }
+  setTimeout(() => { b.textContent = "Copy"; }, 1800);
+});
+
+/* ---- main board ---- */
+function cardHTML(o){
+  const k = KINDS.find(x => x.id === o.kind) || KINDS[0];
+  const pv = PROVINCES.find(x => x.id === o.prov);
+  const sp = SPEEDS.find(x => x.id === o.speed);
+  const link = contactHTML(o, "go");
+  return `<article class="card">
+    <span class="tag ${k.cls}">${esc(k.label)}</span>${pv ? `<span class="tag t-db">${esc(pv.label)}</span>` : ""}${sp ? `<span class="tag t-time">${esc(sp.label)}</span>` : ""}${o.salary ? `<span class="tag t-pay">${esc(o.salary)}</span>` : ""}${o.ptype ? `<span class="tag t-type">${esc(o.ptype)}</span>` : ""}
+    <h3>${esc(o.title)}</h3><div class="org">${esc(o.org)}</div>
+    <p>${esc(o.what)}</p>
+    <div class="meta"><strong>Who:</strong> ${esc(o.who)}<br><strong>When:</strong> ${esc(o.when)}</div>
+    ${o.caution ? `<div class="warn" style="margin:0 0 12px">${esc(o.caution)}</div>` : ""}
+    ${link}</article>`;
+}
+
+function renderCards(){
+  const q = state.q.toLowerCase();
+  const list = DATA.filter(o => {
+    if(!isLive(o)) return false;
+    if(state.kind !== "all" && o.kind !== state.kind) return false;
+    if(state.prov !== "all" && o.prov !== state.prov && o.prov !== "nat") return false;
+    if(state.speed !== "all" && o.speed !== state.speed) return false;
+    if(state.stage && !o.stages.includes(state.stage)) return false;
+    if(state.path !== "open" && !o.paths.includes(state.path)) return false;
+    if(q && !(o.title + o.org + o.what + o.who).toLowerCase().includes(q)) return false;
+    return true;
+  });
+  $("#count").textContent = list.length === 1 ? "1 result" : list.length + " results";
+  $("#cards").innerHTML = list.length ? list.map(cardHTML).join("")
+    : `<div class="empty" style="grid-column:1/-1"><h3>Nothing matches yet</h3>
+       <p>Widen your filters, or choose “Show me everything” at the top. New posts are added every few days, so check back.</p></div>`;
+}
+
+const renderSubset = (sel, kinds) => $(sel).innerHTML = DATA.filter(o => kinds.includes(o.kind) && isLive(o)).map(cardHTML).join("");
+const renderRoute  = (sel, arr) => $(sel).innerHTML = arr.map(s => `<li><h3>${esc(s.h)}</h3><p>${s.p}</p></li>`).join("");
+
+$("#provList").innerHTML = PROVINCE_LINKS.map(p =>
+  `<a href="${esc(p.url)}" target="_blank" rel="noopener"><strong>${esc(p.name)}</strong><span>${esc(p.note)}</span></a>`).join("");
+
+$("#guides").innerHTML = GUIDES.map(g =>
+  `<details><summary>${esc(g.t)}</summary><div class="details-body">
+   <ol>${g.steps.map(s => `<li>${esc(s)}</li>`).join("")}</ol>
+   ${g.warn ? `<div class="warn">${esc(g.warn)}</div>` : ""}</div></details>`).join("");
+
+const TABS = [
+  {id:"jobs",label:"Opportunities"},{id:"prov",label:"Provinces"},{id:"become",label:"Become a teacher"},
+  {id:"mark",label:"Marking & assessment"},{id:"money",label:"Money"},{id:"study",label:"Study further"},
+  {id:"abroad",label:"Abroad"},{id:"guides",label:"How to apply"},{id:"win",label:"Got the job?"}
+];
+const drawTabs = () => {
+  const cur = document.querySelector('.tab[aria-selected="true"]')?.dataset.t || "jobs";
+  $("#tabbar").innerHTML = TABS.map(t => `<button class="tab" role="tab" data-t="${t.id}" aria-selected="${t.id===cur}">${t.label}</button>`).join("");
+};
+drawTabs();
+/* The intake tool is only shown to Kena's owner. Everyone else sees the public board. */
+(async () => {
+  try {
+    const u = await window.claude?.use?.("user");
+    if (u && await u.isOwner()) { TABS.push({id:"add",label:"Add posts (admin)"}); drawTabs(); }
+  } catch {}
+})();
+$("#tabbar").addEventListener("click", e => {
+  const b = e.target.closest(".tab"); if(!b) return;
+  document.querySelectorAll(".tab").forEach(x => x.setAttribute("aria-selected", x === b));
+  TABS.forEach(t => $("#panel-" + t.id).hidden = (t.id !== b.dataset.t));
+  if(b.dataset.t !== "add") $("#panel-add").hidden = true;
+});
+
+function fill(sel, items, allLabel){
+  $(sel).innerHTML = (allLabel ? `<option value="all">${allLabel}</option>` : "") +
+    items.map(i => `<option value="${i.id}">${esc(i.label)}</option>`).join("");
+}
+fill("#fKind", KINDS, "All types");
+fill("#fProv", PROVINCES, "All provinces");
+fill("#fSpeed", SPEEDS, "Any speed");
+$("#fKind").addEventListener("change", e => {state.kind = e.target.value; renderCards();});
+$("#fProv").addEventListener("change", e => {state.prov = e.target.value; renderCards();});
+$("#fSpeed").addEventListener("change", e => {state.speed = e.target.value; renderCards();});
+$("#fText").addEventListener("input", e => {state.q = e.target.value; renderCards();});
+
+/* ---- intake form ---- */
+fill("#aKind", KINDS, null); fill("#aProv", PROVINCES, null); fill("#aSpeed", SPEEDS, null);
+fill("#aStages", STAGES, null); fill("#aPaths", PATHS.map(p => ({id:p.id, label:p.label})), null);
+const picked = id => Array.from($(id).selectedOptions).map(o => o.value);
+const iso = d => d.toISOString().slice(0,10);
+$("#aSeen").value = iso(today);
+$("#aExp").value = iso(new Date(today.getTime() + 6*86400000));
+
+/* pull phone, province and subject hints out of a pasted WhatsApp message */
+$("#parse").addEventListener("click", () => {
+  const t = $("#pTxt").value;
+  if(!t.trim()) return;
+  const phone = (t.match(/(?:\+27|0)\s?\d{2}[\s-]?\d{3}[\s-]?\d{4}/) || [])[0];
+  if(phone) $("#aPhone").value = phone.trim();
+  const mail = (t.match(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/) || [])[0];
+  if(mail) $("#aEmail").value = mail.trim();
+  const link = (t.match(/https?:\/\/[^\s)\]]+/) || [])[0];
+  if(link) $("#aUrl").value = link.trim();
+  const close = t.match(/clos(?:ing|es|ed)[^\n]*?(\d{1,2}\s+[A-Za-z]+\s+20\d{2})/i);
+  if(close){
+    $("#aWhen").value = "Closes " + close[1];
+    const d = new Date(close[1]);
+    if(!isNaN(d)) $("#aExp").value = d.toISOString().slice(0,10);
+  }
+  const provGuess = [["gp",/gauteng|johannesburg|pretoria|tshwane|soweto|ekurhuleni|vaal|soshanguve|mamelodi/i],
+    ["wc",/western cape|cape town|stellenbosch|paarl|worcester/i],["kzn",/kwazulu|durban|pietermaritzburg|kzn/i],
+    ["ec",/eastern cape|mthatha|gqeberha|east london|port elizabeth/i],["fs",/free state|bloemfontein|welkom/i],
+    ["lp",/limpopo|polokwane|thohoyandou|tzaneen/i],["mp",/mpumalanga|nelspruit|mbombela|witbank|emalahleni/i],
+    ["nw",/north west|mahikeng|mafikeng|rustenburg|potchefstroom|klerksdorp/i],["nc",/northern cape|kimberley|upington/i]];
+  for(const [id,re] of provGuess){ if(re.test(t)){ $("#aProv").value = id; break; } }
+  $("#aSpeed").value = /urgent|immediate|asap|today|tomorrow|monday|start (on )?/i.test(t) ? "now" : "days";
+  const first = t.split(/[\n.]/).map(s=>s.trim()).filter(Boolean)[0] || "";
+  if(!$("#aTitle").value) $("#aTitle").value = first.slice(0,90);
+  if(!$("#aWhat").value)  $("#aWhat").value = t.trim().slice(0,400);
+  $("#out").value = "Details pulled out. Check every field below, especially the phone number and the province, before you make the entry.";
+});
+
+$("#mk").addEventListener("click", () => {
+  const e = {
+    title:$("#aTitle").value.trim(), org:$("#aOrg").value.trim(),
+    kind:$("#aKind").value, prov:$("#aProv").value, speed:$("#aSpeed").value,
+    stages:picked("#aStages"), paths:picked("#aPaths"),
+    what:$("#aWhat").value.trim(), who:$("#aWho").value.trim(), when:$("#aWhen").value.trim(),
+    email:$("#aEmail").value.trim(), phone:$("#aPhone").value.trim(), url:$("#aUrl").value.trim(),
+    source:$("#aSrc").value.trim(), seen:$("#aSeen").value, expires:$("#aExp").value
+  };
+  if(!e.title || !e.what){ $("#out").value = "Add at least a title and a description, then press the button again."; return; }
+  if((e.speed === "now" || e.speed === "days") && !e.phone && !e.email && !e.url){
+    $("#out").value = "This post has no phone number, no email and no link. We do not publish those. Go back to the channel and find the contact first."; return;
+  }
+  if(!e.stages.length) e.stages = ["new","teaching"];
+  if(!e.paths.length)  e.paths = ["rooted","growing","moving","open"];
+  $("#out").value = "  " + JSON.stringify(e, null, 2).replace(/\n/g, "\n  ") + ",";
+});
+
+$("#cp").addEventListener("click", async () => {
+  const t = $("#out"); if(!t.value) return;
+  t.select();
+  try{ await navigator.clipboard.writeText(t.value); }catch{ document.execCommand("copy"); }
+  $("#cp").textContent = "Copied"; setTimeout(() => $("#cp").textContent = "Copy", 1600);
+});
+$("#clr").addEventListener("click", () => {
+  ["#pTxt","#aTitle","#aOrg","#aWhat","#aWho","#aWhen","#aPhone","#aEmail","#aUrl","#aSrc","#out"].forEach(s => $(s).value = "");
+  $("#aSeen").value = iso(today); $("#aExp").value = iso(new Date(today.getTime() + 6*86400000));
+});
+
+/* ==========================================================================
+   GOT THE JOB AND SHARING
+   KENA_EMAIL: where stories and reports go. STORIES: only stories Kena has
+   confirmed AND the person agreed to publish. Never add one that is not.
+   ========================================================================== */
+const KENA_EMAIL = "kenafortress@gmail.com";
+const KENA_LINK  = "https://kenafortress.github.io/";
+const STORIES = [
+  /* {name:"", got:"A teaching post", org:"", prov:"gp", date:"2026-10-20", story:"", confirmed:true}, */
+];
+
+const store = {
+  get(k){ try { return localStorage.getItem(k); } catch { return null; } },
+  set(k,v){ try { localStorage.setItem(k,v); } catch {} }
+};
+
+function sendBlock(subject, body){
+  if(!KENA_EMAIL) return `<strong>Where to send it</strong><br>Kena's email address is being set up. Copy your story and keep it. It will appear here within a few days.`;
+  const mail = `mailto:${KENA_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  return `<strong>Send it to Kena</strong><br>Paste it into an email to <strong>${esc(KENA_EMAIL)}</strong>
+    <button class="copybtn" type="button" data-copy="${esc(KENA_EMAIL)}">Copy</button>
+    <div class="btnrow"><a class="btn ghost" href="${esc(mail)}">Open my email app</a></div>`;
+}
+
+if(KENA_EMAIL){
+  $("#footReport").hidden = false;
+  $("#footReport").innerHTML = `Seen a fake, closed or wrong post? Email <a href="mailto:${esc(KENA_EMAIL)}">${esc(KENA_EMAIL)}</a> <button class="copybtn" type="button" data-copy="${esc(KENA_EMAIL)}" style="color:#D5E4DC;border-color:#3E5A50">Copy</button> and we take it down.`;
+}
+
+/* story form */
+fill("#wProv", PROVINCES, null);
+$("#wProv").insertAdjacentHTML("afterbegin", '<option value="" selected>Choose a province</option>');
+$("#wPosts").innerHTML = [...new Set(DATA.map(o => o.title + ", " + o.org))].map(t => `<option value="${esc(t)}">`).join("");
+
+$("#wMake").addEventListener("click", () => {
+  const v = id => $(id).value.trim();
+  const missing = [];
+  if(!v("#wName")) missing.push("your first name");
+  if(!v("#wGot")) missing.push("what you got");
+  if(!v("#wOrg")) missing.push("the school or organisation");
+  if(!v("#wStory")) missing.push("your story");
+  if(!v("#wContact")) missing.push("a phone or email to confirm");
+  if(missing.length){ $("#wErr").textContent = "Please add " + missing.join(", ") + "."; $("#wReady").hidden = true; return; }
+  if(!$("#wTrue").checked){ $("#wErr").textContent = "Please tick the box to confirm the story is true."; $("#wReady").hidden = true; return; }
+  $("#wErr").textContent = "";
+  const pv = PROVINCES.find(x => x.id === v("#wProv"));
+  const lines = [
+    "KENA SUCCESS STORY", "",
+    "Name: " + v("#wName"),
+    "What I got: " + v("#wGot"),
+    "Kena post: " + (v("#wPost") || "Not sure"),
+    "School or organisation: " + v("#wOrg"),
+    "Province: " + (pv ? pv.label : "Not given"),
+    "Date: " + (v("#wDate") ? fmt(v("#wDate")) : "Not given"),
+    "Kena code of the person who shared Kena with me: " + (v("#wRef").toUpperCase() || "None"),
+    "Contact to confirm: " + v("#wContact"),
+    "Kena may publish my story: " + ($("#wPub").checked ? "Yes" : "No"),
+    "", "My story:", v("#wStory"), "",
+    "I confirm this is true and I can show my appointment letter or offer if Kena asks."
+  ];
+  const body = lines.join("\n");
+  $("#wOut").value = body;
+  $("#wSend").innerHTML = sendBlock("Kena success story: " + v("#wName"), body);
+  $("#wReady").hidden = false;
+  $("#wOut").scrollIntoView({behavior:"smooth", block:"center"});
+});
+$("#wCopy").addEventListener("click", async () => {
+  const t = $("#wOut");
+  try { await navigator.clipboard.writeText(t.value); } catch { t.select(); document.execCommand("copy"); }
+  $("#wCopy").textContent = "Copied"; setTimeout(() => $("#wCopy").textContent = "Copy my story", 1600);
+});
+
+/* referral code: first name plus four digits, kept on this device only */
+function showCode(code){
+  const msg = `I use Kena to find teaching jobs, marking work and bursaries in South Africa, all in one place and checked every few days. It is free: ${KENA_LINK}\n\nIf you get a job through it, add my Kena code ${code} when you share your story.`;
+  $("#rCode").textContent = code;
+  $("#rOut").value = msg;
+  $("#rWa").href = "https://wa.me/?text=" + encodeURIComponent(msg);
+  $("#rReady").hidden = false;
+  if(navigator.share){
+    $("#rShare").hidden = false;
+    $("#rShare").onclick = () => navigator.share({title:"Kena", text:msg}).catch(() => {});
+  }
+}
+$("#rMake").addEventListener("click", () => {
+  const n = $("#rName").value.trim().toUpperCase().replace(/[^A-Z]/g, "").slice(0, 10);
+  if(!n){ $("#rName").focus(); return; }
+  const saved = store.get("kenaCode");
+  const code = saved && saved.startsWith(n + "-") ? saved : n + "-" + String(Math.floor(1000 + Math.random()*9000));
+  store.set("kenaCode", code);
+  showCode(code);
+});
+$("#rCopy").addEventListener("click", async () => {
+  const t = $("#rOut");
+  try { await navigator.clipboard.writeText(t.value); } catch { t.select(); document.execCommand("copy"); }
+  $("#rCopy").textContent = "Copied"; setTimeout(() => $("#rCopy").textContent = "Copy message", 1600);
+});
+{ const saved = store.get("kenaCode"); if(saved){ $("#rName").value = saved.split("-")[0]; showCode(saved); } }
+
+/* confirmed stories */
+{
+  const shown = STORIES.filter(x => x.confirmed);
+  $("#storyList").innerHTML = shown.length ? shown.map(x => {
+    const pv = PROVINCES.find(p => p.id === x.prov);
+    return `<article class="story"><span class="tag ok">Confirmed by Kena</span><span class="tag t-time">${esc(x.got)}</span>
+      <h3>${esc(x.name)}</h3><div class="org">${esc(x.org)}${pv ? " · " + esc(pv.label) : ""}${x.date ? " · " + esc(fmt(x.date)) : ""}</div>
+      <blockquote>${esc(x.story)}</blockquote></article>`;
+  }).join("") : `<div class="empty" style="grid-column:1/-1"><h3>No stories yet</h3><p>Kena is new. When the first teacher lands a post through it, their story goes here. It could be yours.</p></div>`;
+}
+
+$("#goWin").addEventListener("click", () => { document.querySelector('.tab[data-t="win"]').click(); window.scrollTo({top: $("#tabbar").getBoundingClientRect().top + scrollY - 10, behavior:"smooth"}); });
+
+/* boot */
+buildChips($("#stageChips"), STAGES, "stage");
+buildChips($("#pathChips"), PATHS.map(p => ({id:p.id, label:p.label})), "path");
+renderNote(); renderUrgent(); renderCards();
+renderSubset("#markCards", ["mark"]);
+renderSubset("#moneyCards", ["money","start"]);
+renderSubset("#studyCards", ["study"]);
+renderRoute("#routeList", ROUTE_BECOME);
+renderRoute("#markRoute", ROUTE_MARK);
+renderRoute("#studyRoute", ROUTE_STUDY);
+renderRoute("#abroadRoute", ROUTE_ABROAD);
+</script>
+
+</body>
+</html>
